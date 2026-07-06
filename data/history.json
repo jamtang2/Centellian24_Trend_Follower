@@ -50,19 +50,13 @@
       }
     },
     "ulta": {
-      "review_count": 18,
-      "rating": 4.7,
-      "sku_count": 1,
-      "in_stock": true,
-      "sources": [
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFE63O04ChCfuz_-uJx1AUAn9j3OxbOuuhpSSwksz0Y6AiDkKxlvVsFWBeUSuXzjw1Mgz0JAuY3dTHlrUknqyq5dFoA_2MZYiWrncUZeq71UCDVygJtvLLgzTJLF2FYeF-pGlyIzUlqrOKSVfSi04qr8SJJX9V43OScgiPbntyw4PVqQL4Ldg==",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGq_fbMrLGurKvj92waalw7-cLFSqooHi1fSvAVF0yakgJFRNf8Gv_tJD_whlvh2-iXXpxhSHMXPEiPJCcN_aOfHon-Q8y88TKnu8Ye3vw7VFBkxnyNzj7bisDqj4oKexrNyM5-jHuymVBQuuT-nRwQTr19gxyZECpbwqVpS8UHYgnu",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcbhOSobuhq4bpscINO_nhF-HGgXFaYDfZN4_paLJEod7cRkD2eAiHWnhj4Ft7pbSLb-mMHQcGps0NuXjv_bTlGyRTifw9HEA95z6p3uGTqNJnCEiMOdhzEXR8ISz2B8_ClAu5gnrilvJNph_arlFM6FZ_dbyUZosqNp9Uxr-kuA==",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHI73y6KoY4bLl5P_CDjdBLG0ezZp9qvEm7RMN7eF34rXEn0fvEIFJWAyghkgCp3zpJ4TzfloBJDCPH-QtjdM_sp5KmtqjVgokhsIh-Ype42FhZuipXTMjkTf_znaeGwoMVhQ==",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHfL7geglufxDVxCMqKWYPLFYLWTy-ljUGrmq5daBhl783WFh4lzT7XlztrxSRufm_cDnyR06UcplMAueLTpRT_snYW7Uhf19k47VYM6u9d7ezmyHCVcqL43I2ZKWiwE9xsnrBlOoWrXIdAfs4mVrueBsYyUg=="
-      ],
+      "review_count": null,
+      "rating": null,
+      "sku_count": null,
+      "in_stock": null,
+      "sources": [],
       "source": "gemini_grounding",
-      "confidence": "low"
+      "confidence": "failed"
     },
     "tiktok": {
       "hashtag": "#Centellian24",
@@ -70,33 +64,16 @@
       "top_view_count_est": null,
       "sources": [],
       "source": "gemini_grounding",
-      "confidence": "low"
+      "confidence": "failed"
     },
     "instagram": {
       "hashtag": "#Centellian24",
-      "post_count_est": 0,
-      "sources": [
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-9y_3FcB6w9U_K5p8FWEF1cHq-qfyK0TUYon_wmr9GU_cmhq14hqmIdavsXvT0yj-GlVSlWLwo1uX8JQXQQPoF0fG2R2D21xdBrrQwLlFg2xq3OsOWVJEu1dTV6iKLuwrhozG4Q==",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0oyxX57WcIcAv29htDXPtvmeyR8VFgcX7WLiAhWp-hiKTuhjs6tux8JY-fgPjyvd9-dPVbx3nlYqgTnc659yi42DVKBgUovYds_0j5Nuua7qGFxUSj7VXaMmBfdnfQcdhVBOFjeH0LuRhdJZELzJa2jwHerYL6ghSbgQGujg=",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEnf7FNKl8VA-vhxqqg-U7NIYOW3Y_XLNmK5F8-IPbDf-101Go60_tdQFvJZotazEEjeR6qgV1mvJuZ4MkCRGeJHGBaphCNoO_wnNXSFfJ-r5eaTUgoDDTiAzhdcowp_Rb9jlBXBA==",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOE_8hAhrM8xvZ2qohXvIjzPLdXXZlDlj4XnJ_XUnRKR8puGVjXP-MSex4oAx7NYgmdSVacYkRxWOBiPDXt_6wbyF3Snz9hQUOqJQE6QfHb6RSKQDhqRgu0auA-sM=",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEKeVOtrjrWzyb3mJ5XuAVcF0MtquMRlPbCsf_y49kE5ut6_O55jF0JnzZasFAA8xj1a_DJqrMYPWPV0t-XlMdFRdAGrLBHCE515uFsNNCXLNBhpkk0ee8Zl_zcFyi1jYeMilR_l9qfOZ-7UYkUwA=="
-      ],
+      "post_count_est": null,
+      "sources": [],
       "source": "gemini_grounding",
-      "confidence": "low"
+      "confidence": "failed"
     },
-    "ai_summary": "센텔리안24의 이번 주 미국/일본 시장 지표를 보면, 아마존에서는 '마데카 크림 타임 리버스', '360도 샷 PDRN 리프팅 아이크림', '마데카 크림 액티브 리뉴 PDRN' 제품에 대한 추정 판매량, BSR, 리뷰 등 상세 지표가 현재 확인되지 않습니다. Google Trends 역시 미국과 일본 시장 모두에서 'Centellian24' 및 'Madeca Cream' 검색량 추이가 나타나지 않고 있습니다.\n\nUlta에서는 1개의 SKU가 재고 있는 상태로 18개의 리뷰와 평균 4.7점의 높은 평점을 기록하고 있으나, 해당 데이터의 추정 신뢰도는 '낮음'으로 파악됩니다. 소셜 미디어 지표인 TikTok의 '#Centellian24' 해시태그 관련 추정 게시물 및 조회수는 현재 확인되지 않으며, Instagram의 추정 게시물 수는 0건으로 매우 낮은 수준입니다. 이 두 소셜 미디어 채널 데이터의 추정 신뢰도 또한 '낮음'으로 명시되어 있습니다.",
-    "sources": [
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFE63O04ChCfuz_-uJx1AUAn9j3OxbOuuhpSSwksz0Y6AiDkKxlvVsFWBeUSuXzjw1Mgz0JAuY3dTHlrUknqyq5dFoA_2MZYiWrncUZeq71UCDVygJtvLLgzTJLF2FYeF-pGlyIzUlqrOKSVfSi04qr8SJJX9V43OScgiPbntyw4PVqQL4Ldg==",
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGq_fbMrLGurKvj92waalw7-cLFSqooHi1fSvAVF0yakgJFRNf8Gv_tJD_whlvh2-iXXpxhSHMXPEiPJCcN_aOfHon-Q8y88TKnu8Ye3vw7VFBkxnyNzj7bisDqj4oKexrNyM5-jHuymVBQuuT-nRwQTr19gxyZECpbwqVpS8UHYgnu",
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHcbhOSobuhq4bpscINO_nhF-HGgXFaYDfZN4_paLJEod7cRkD2eAiHWnhj4Ft7pbSLb-mMHQcGps0NuXjv_bTlGyRTifw9HEA95z6p3uGTqNJnCEiMOdhzEXR8ISz2B8_ClAu5gnrilvJNph_arlFM6FZ_dbyUZosqNp9Uxr-kuA==",
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHI73y6KoY4bLl5P_CDjdBLG0ezZp9qvEm7RMN7eF34rXEn0fvEIFJWAyghkgCp3zpJ4TzfloBJDCPH-QtjdM_sp5KmtqjVgokhsIh-Ype42FhZuipXTMjkTf_znaeGwoMVhQ==",
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHfL7geglufxDVxCMqKWYPLFYLWTy-ljUGrmq5daBhl783WFh4lzT7XlztrxSRufm_cDnyR06UcplMAueLTpRT_snYW7Uhf19k47VYM6u9d7ezmyHCVcqL43I2ZKWiwE9xsnrBlOoWrXIdAfs4mVrueBsYyUg==",
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG-9y_3FcB6w9U_K5p8FWEF1cHq-qfyK0TUYon_wmr9GU_cmhq14hqmIdavsXvT0yj-GlVSlWLwo1uX8JQXQQPoF0fG2R2D21xdBrrQwLlFg2xq3OsOWVJEu1dTV6iKLuwrhozG4Q==",
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF0oyxX57WcIcAv29htDXPtvmeyR8VFgcX7WLiAhWp-hiKTuhjs6tux8JY-fgPjyvd9-dPVbx3nlYqgTnc659yi42DVKBgUovYds_0j5Nuua7qGFxUSj7VXaMmBfdnfQcdhVBOFjeH0LuRhdJZELzJa2jwHerYL6ghSbgQGujg=",
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEnf7FNKl8VA-vhxqqg-U7NIYOW3Y_XLNmK5F8-IPbDf-101Go60_tdQFvJZotazEEjeR6qgV1mvJuZ4MkCRGeJHGBaphCNoO_wnNXSFfJ-r5eaTUgoDDTiAzhdcowp_Rb9jlBXBA==",
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHOE_8hAhrM8xvZ2qohXvIjzPLdXXZlDlj4XnJ_XUnRKR8puGVjXP-MSex4oAx7NYgmdSVacYkRxWOBiPDXt_6wbyF3Snz9hQUOqJQE6QfHb6RSKQDhqRgu0auA-sM=",
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEKeVOtrjrWzyb3mJ5XuAVcF0MtquMRlPbCsf_y49kE5ut6_O55jF0JnzZasFAA8xj1a_DJqrMYPWPV0t-XlMdFRdAGrLBHCE515uFsNNCXLNBhpkk0ee8Zl_zcFyi1jYeMilR_l9qfOZ-7UYkUwA=="
-    ]
+    "ai_summary": "",
+    "sources": []
   }
 ]
