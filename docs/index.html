@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Centellian24 US Monitor</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #0b0d12;
+    --card-bg: #151822;
+    --card-border: #262b3a;
+    --text: #e7e9ee;
+    --muted: #8b93a7;
+    --accent: #5b8cff;
+    --accent-2: #35d0ba;
+    --up: #3ddc84;
+    --down: #ff6b6b;
+    --badge-measured-bg: #123a2c;
+    --badge-measured-fg: #3ddc84;
+    --badge-estimate-bg: #3a2e12;
+    --badge-estimate-fg: #f2b84b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Pretendard, Roboto, sans-serif;
+    line-height: 1.5;
+  }
+  header {
+    padding: 28px 24px 8px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  header h1 { margin: 0 0 4px; font-size: 22px; }
+  header p { margin: 0; color: var(--muted); font-size: 14px; }
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 24px 64px;
+  }
+  section { margin-top: 28px; }
+  section > h2 {
+    font-size: 15px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 0 0 12px;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 12px;
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 16px;
+  }
+  .card .label { color: var(--muted); font-size: 12px; margin-bottom: 6px; }
+  .card .value { font-size: 22px; font-weight: 600; }
+  .card .delta { font-size: 13px; margin-top: 6px; }
+  .delta.up { color: var(--up); }
+  .delta.down { color: var(--down); }
+  .delta.flat { color: var(--muted); }
+  .charts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(420px, 100%), 1fr));
+    gap: 16px;
+  }
+  .chart-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 16px;
+  }
+  .chart-card .chart-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .chart-card .chart-head h3 { margin: 0; font-size: 14px; font-weight: 600; }
+  .chart-wrap { position: relative; height: 280px; }
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 999px;
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .badge.measured { background: var(--badge-measured-bg); color: var(--badge-measured-fg); }
+  .badge.estimate { background: var(--badge-estimate-bg); color: var(--badge-estimate-fg); }
+  .badges { display: flex; gap: 6px; flex-wrap: wrap; }
+  .summary-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 18px 20px;
+  }
+  .summary-card p { margin: 0 0 12px; font-size: 14px; }
+  .summary-card .sources { font-size: 12px; color: var(--muted); }
+  .summary-card .sources a { color: var(--accent); text-decoration: none; word-break: break-all; }
+  .summary-card .sources a:hover { text-decoration: underline; }
+  .summary-card .sources ol { margin: 6px 0 0; padding-left: 18px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  th, td {
+    text-align: right;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--card-border);
+    white-space: nowrap;
+  }
+  th:first-child, td:first-child { text-align: left; }
+  th { color: var(--muted); font-weight: 600; font-size: 12px; }
+  .table-wrap { overflow-x: auto; background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px; padding: 8px 12px; }
+  .toolbar { display: flex; justify-content: flex-end; margin-bottom: 10px; }
+  button.csv-btn {
+    background: var(--accent);
+    color: #06111f;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  button.csv-btn:hover { opacity: 0.9; }
+  .empty-note { color: var(--muted); font-size: 13px; padding: 24px; text-align: center; }
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bg: #f5f6fa;
+      --card-bg: #ffffff;
+      --card-border: #e3e6ee;
+      --text: #171a21;
+      --muted: #6b7280;
+      --badge-measured-bg: #e4f7ec;
+      --badge-measured-fg: #148a4c;
+      --badge-estimate-bg: #fdf1de;
+      --badge-estimate-fg: #b3760f;
+    }
+    button.csv-btn { color: #fff; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Centellian24 US Monitor</h1>
+  <p>센텔리안24(동국제약) 미국 시장 인기도 추적 대시보드 — 주간 자동 수집</p>
+</header>
+<main id="app">
+  <div class="empty-note" id="loading-note">데이터를 불러오는 중...</div>
+</main>
+
+<script>
+const DATA_URL = "./data/history.json";
+const TRENDS_KEYWORDS = ["Centellian24", "Madeca Cream"];
+
+const fmtInt = (n) => (n === null || n === undefined || Number.isNaN(n)) ? "N/A" : Math.round(n).toLocaleString();
+const fmtFloat = (n, d = 1) => (n === null || n === undefined || Number.isNaN(n)) ? "N/A" : n.toFixed(d);
+
+function average(values) {
+  const nums = values.filter((v) => v !== null && v !== undefined && !Number.isNaN(v));
+  if (nums.length === 0) return null;
+  return nums.reduce((a, b) => a + b, 0) / nums.length;
+}
+
+function sum(values) {
+  const nums = values.filter((v) => v !== null && v !== undefined && !Number.isNaN(v));
+  if (nums.length === 0) return null;
+  return nums.reduce((a, b) => a + b, 0);
+}
+
+// ---- Per-week aggregate metrics used by cards + charts ----
+function amazonTotalSales(week) {
+  return sum((week.amazon || []).map((p) => p.est_monthly_sales));
+}
+function amazonAvgBsr(week) {
+  return average((week.amazon || []).map((p) => p.bsr));
+}
+function amazonTotalReviews(week) {
+  return sum((week.amazon || []).map((p) => p.review_count));
+}
+function trendsRegionAvg(week, region) {
+  const regionData = (week.google_trends || {})[region] || {};
+  return average(TRENDS_KEYWORDS.map((k) => regionData[k]));
+}
+function ultaReviewCount(week) {
+  return (week.ulta || {}).review_count ?? null;
+}
+function socialPostCount(week) {
+  return sum([(week.tiktok || {}).post_count_est, (week.instagram || {}).post_count_est]);
+}
+
+function weekOverWeek(history, metricFn) {
+  if (history.length === 0) return { current: null, delta: null, pct: null };
+  const current = metricFn(history[history.length - 1]);
+  const previous = history.length > 1 ? metricFn(history[history.length - 2]) : null;
+  if (current === null || previous === null || previous === 0) {
+    return { current, delta: null, pct: null };
+  }
+  const delta = current - previous;
+  const pct = (delta / Math.abs(previous)) * 100;
+  return { current, delta, pct };
+}
+
+function deltaBadge(delta, pct, opts = {}) {
+  const invert = !!opts.invert; // for BSR, a decrease is an improvement (still shown, just colored inverted)
+  if (delta === null || delta === undefined) return `<span class="delta flat">전주 대비 데이터 없음</span>`;
+  const good = invert ? delta < 0 : delta > 0;
+  const flat = delta === 0;
+  const cls = flat ? "flat" : (good ? "up" : "down");
+  const arrow = flat ? "→" : (delta > 0 ? "▲" : "▼");
+  const pctText = (pct === null || !isFinite(pct)) ? "" : ` (${pct >= 0 ? "+" : ""}${pct.toFixed(1)}%)`;
+  return `<span class="delta ${cls}">${arrow} ${Math.abs(delta).toLocaleString()}${pctText} WoW</span>`;
+}
+
+function renderCards(history) {
+  const sales = weekOverWeek(history, amazonTotalSales);
+  const bsr = weekOverWeek(history, amazonAvgBsr);
+  const trendsUS = weekOverWeek(history, (w) => trendsRegionAvg(w, "US"));
+  const ulta = weekOverWeek(history, ultaReviewCount);
+  const social = weekOverWeek(history, socialPostCount);
+
+  const cards = [
+    { label: "아마존 추정 판매량 합계", value: fmtInt(sales.current) + "개", wow: deltaBadge(sales.delta, sales.pct) },
+    { label: "아마존 평균 BSR", value: fmtInt(bsr.current), wow: deltaBadge(bsr.delta, bsr.pct, { invert: true }) },
+    { label: "Google Trends (US 평균)", value: fmtInt(trendsUS.current), wow: deltaBadge(trendsUS.delta, trendsUS.pct) },
+    { label: "Ulta 리뷰 수", value: fmtInt(ulta.current), wow: deltaBadge(ulta.delta, ulta.pct) },
+    { label: "TikTok+Instagram 게시물 수(추정)", value: fmtInt(social.current), wow: deltaBadge(social.delta, social.pct) },
+  ];
+
+  return `<div class="cards">${cards.map((c) => `
+    <div class="card">
+      <div class="label">${c.label}</div>
+      <div class="value">${c.value}</div>
+      <div class="delta-wrap">${c.wow}</div>
+    </div>`).join("")}</div>`;
+}
+
+function palette(i) {
+  const colors = ["#5b8cff", "#35d0ba", "#f2b84b", "#ff6b6b", "#b98bff", "#4bd6f2"];
+  return colors[i % colors.length];
+}
+
+function baseLineDataset(label, data, color) {
+  return {
+    label,
+    data,
+    borderColor: color,
+    backgroundColor: color,
+    spanGaps: true,
+    tension: 0.25,
+    pointRadius: 3,
+  };
+}
+
+function chartTextColor() {
+  return getComputedStyle(document.body).getPropertyValue("--text") || "#e7e9ee";
+}
+function chartGridColor() {
+  return getComputedStyle(document.body).getPropertyValue("--card-border") || "#262b3a";
+}
+
+function baseChartOptions(extra = {}) {
+  const textColor = chartTextColor();
+  const gridColor = chartGridColor();
+  return Object.assign({
+    responsive: true,
+    maintainAspectRatio: false,
+    interaction: { mode: "index", intersect: false },
+    plugins: {
+      legend: { labels: { color: textColor } },
+      tooltip: { mode: "index", intersect: false },
+    },
+    scales: {
+      x: { ticks: { color: textColor }, grid: { color: gridColor } },
+      y: { ticks: { color: textColor }, grid: { color: gridColor } },
+    },
+  }, extra);
+}
+
+function renderCharts(history) {
+  const labels = history.map((w) => w.week);
+
+  // Chart 1: Amazon est. monthly sales per product
+  const productNames = Array.from(new Set(history.flatMap((w) => (w.amazon || []).map((p) => p.product))));
+  const salesDatasets = productNames.map((name, i) => baseLineDataset(
+    name,
+    history.map((w) => {
+      const p = (w.amazon || []).find((p) => p.product === name);
+      return p ? p.est_monthly_sales : null;
+    }),
+    palette(i),
+  ));
+
+  // Chart 2: Amazon BSR trend (reversed axis — lower is better, shown at top)
+  const bsrDatasets = productNames.map((name, i) => baseLineDataset(
+    name,
+    history.map((w) => {
+      const p = (w.amazon || []).find((p) => p.product === name);
+      return p ? p.bsr : null;
+    }),
+    palette(i),
+  ));
+
+  // Chart 3: Amazon + Ulta review counts
+  const reviewDatasets = [
+    baseLineDataset("아마존 리뷰 수(합계)", history.map(amazonTotalReviews), palette(0)),
+    baseLineDataset("Ulta 리뷰 수", history.map(ultaReviewCount), palette(1)),
+  ];
+
+  // Chart 4: Google Trends US vs JP
+  const trendsDatasets = [
+    baseLineDataset("US", history.map((w) => trendsRegionAvg(w, "US")), palette(0)),
+    baseLineDataset("JP", history.map((w) => trendsRegionAvg(w, "JP")), palette(1)),
+  ];
+
+  // Chart 5: TikTok / Instagram
+  const socialDatasets = [
+    baseLineDataset("TikTok 게시물 수(추정)", history.map((w) => (w.tiktok || {}).post_count_est ?? null), palette(0)),
+    baseLineDataset("Instagram 게시물 수(추정)", history.map((w) => (w.instagram || {}).post_count_est ?? null), palette(1)),
+    baseLineDataset("TikTok 대표 조회수(추정)", history.map((w) => (w.tiktok || {}).top_view_count_est ?? null), palette(2)),
+  ];
+
+  const charts = [
+    { id: "chart-sales", title: "아마존 제품별 추정 월간 판매량 추이", badges: ["measured"], datasets: salesDatasets, options: {} },
+    { id: "chart-bsr", title: "아마존 BSR 순위 추이 (낮을수록 상위)", badges: ["measured"], datasets: bsrDatasets, options: { scales: { y: { reverse: true } } } },
+    { id: "chart-reviews", title: "아마존/Ulta 리뷰 수 누적 추이", badges: ["measured", "estimate"], datasets: reviewDatasets, options: {} },
+    { id: "chart-trends", title: "Google Trends 지수 추이 (US vs JP)", badges: ["measured"], datasets: trendsDatasets, options: {} },
+    { id: "chart-social", title: "TikTok / Instagram 게시물·조회수 추이", badges: ["estimate"], datasets: socialDatasets, options: {} },
+  ];
+
+  const badgeHtml = (kinds) => `<div class="badges">${kinds.map((k) =>
+    k === "measured" ? `<span class="badge measured">실측</span>` : `<span class="badge estimate">추정 (Gemini grounding)</span>`
+  ).join("")}</div>`;
+
+  const html = `<div class="charts">${charts.map((c) => `
+    <div class="chart-card">
+      <div class="chart-head">
+        <h3>${c.title}</h3>
+        ${badgeHtml(c.badges)}
+      </div>
+      <div class="chart-wrap"><canvas id="${c.id}"></canvas></div>
+    </div>`).join("")}</div>`;
+
+  // Return a render function to call after the canvases exist in the DOM.
+  return { html, mount: () => {
+    charts.forEach((c) => {
+      const ctx = document.getElementById(c.id).getContext("2d");
+      const options = baseChartOptions();
+      if (c.options.scales) {
+        Object.assign(options.scales.y, c.options.scales.y);
+      }
+      new Chart(ctx, { type: "line", data: { labels, datasets: c.datasets }, options });
+    });
+  }};
+}
+
+function renderSummary(history) {
+  const latest = history[history.length - 1];
+  const summary = latest.ai_summary && latest.ai_summary.trim().length > 0
+    ? latest.ai_summary
+    : "이번 주 AI 요약이 생성되지 않았습니다.";
+  const sources = latest.sources || [];
+  const sourcesHtml = sources.length > 0
+    ? `<div class="sources">참고 출처<ol>${sources.map((s) => `<li><a href="${s}" target="_blank" rel="noopener">${s}</a></li>`).join("")}</ol></div>`
+    : "";
+  return `<div class="summary-card"><p>${summary}</p>${sourcesHtml}</div>`;
+}
+
+function flattenForCsv(week) {
+  const rows = {};
+  const walk = (obj, prefix) => {
+    if (obj === null || obj === undefined) {
+      rows[prefix] = "";
+    } else if (Array.isArray(obj)) {
+      obj.forEach((v, i) => walk(v, `${prefix}.${i}`));
+    } else if (typeof obj === "object") {
+      Object.entries(obj).forEach(([k, v]) => walk(v, prefix ? `${prefix}.${k}` : k));
+    } else {
+      rows[prefix] = obj;
+    }
+  };
+  walk(week, "");
+  return rows;
+}
+
+function downloadCsv(history) {
+  const rows = history.map(flattenForCsv);
+  const headerSet = new Set();
+  rows.forEach((r) => Object.keys(r).forEach((k) => headerSet.add(k)));
+  const headers = Array.from(headerSet);
+  const escapeCsv = (v) => {
+    const s = String(v ?? "");
+    return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+  };
+  const lines = [headers.join(",")];
+  rows.forEach((r) => lines.push(headers.map((h) => escapeCsv(r[h])).join(",")));
+  const blob = new Blob([lines.join("\n")], { type: "text/csv;charset=utf-8;" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "centellian24_history.csv";
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+}
+
+function renderTable(history) {
+  const rowsHtml = history.slice().reverse().map((w) => `
+    <tr>
+      <td>${w.week}</td>
+      <td>${fmtInt(amazonTotalSales(w))}</td>
+      <td>${fmtInt(amazonAvgBsr(w))}</td>
+      <td>${fmtInt(amazonTotalReviews(w))}</td>
+      <td>${fmtInt(trendsRegionAvg(w, "US"))}</td>
+      <td>${fmtInt(trendsRegionAvg(w, "JP"))}</td>
+      <td>${fmtInt(ultaReviewCount(w))}</td>
+      <td>${fmtInt((w.tiktok || {}).post_count_est ?? null)}</td>
+      <td>${fmtInt((w.instagram || {}).post_count_est ?? null)}</td>
+    </tr>`).join("");
+
+  return `
+    <div class="toolbar"><button class="csv-btn" id="csv-download-btn">CSV 다운로드</button></div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>주차</th>
+            <th>아마존 판매량 합계</th>
+            <th>아마존 평균 BSR</th>
+            <th>아마존 리뷰 수</th>
+            <th>Trends US</th>
+            <th>Trends JP</th>
+            <th>Ulta 리뷰 수</th>
+            <th>TikTok 게시물(추정)</th>
+            <th>Instagram 게시물(추정)</th>
+          </tr>
+        </thead>
+        <tbody>${rowsHtml}</tbody>
+      </table>
+    </div>`;
+}
+
+async function main() {
+  const app = document.getElementById("app");
+  let history;
+  try {
+    const res = await fetch(DATA_URL, { cache: "no-store" });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    history = await res.json();
+  } catch (err) {
+    app.innerHTML = `<div class="empty-note">데이터를 불러오지 못했습니다 (${err.message}). data/history.json 경로를 확인해주세요.</div>`;
+    return;
+  }
+
+  if (!Array.isArray(history) || history.length === 0) {
+    app.innerHTML = `<div class="empty-note">아직 수집된 데이터가 없습니다. 첫 주간 실행 이후 대시보드가 채워집니다.</div>`;
+    return;
+  }
+
+  history = history.slice().sort((a, b) => (a.week > b.week ? 1 : -1));
+
+  const charts = renderCharts(history);
+
+  app.innerHTML = `
+    <section>
+      <h2>최신 주차 요약</h2>
+      ${renderCards(history)}
+    </section>
+    <section>
+      <h2>누적 추이</h2>
+      ${charts.html}
+    </section>
+    <section>
+      <h2>AI 주간 코멘트</h2>
+      ${renderSummary(history)}
+    </section>
+    <section>
+      <h2>원자료</h2>
+      ${renderTable(history)}
+    </section>
+  `;
+
+  charts.mount();
+  document.getElementById("csv-download-btn").addEventListener("click", () => downloadCsv(history));
+}
+
+main();
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+name: Weekly Centellian24 US Monitor Update
+
+on:
+  schedule:
+    # 06:17 KST every Sunday == 21:17 UTC every Saturday (KST = UTC+9)
+    - cron: "17 21 * * 6"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  collect-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run weekly collection
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python -m scripts.run_weekly
+
+      - name: Commit and push updated data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: weekly data update"
+          file_pattern: "data/*.json docs/data/*.json"
