@@ -26,7 +26,7 @@ jobs:
 
       - name: Run weekly collection
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
         run: python -m scripts.run_weekly
 
       - name: Commit and push updated data
