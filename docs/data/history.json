@@ -28,7 +28,7 @@
       },
       {
         "product": "마데카 크림 액티브 리뉴 PDRN",
-        "asin": null,
+        "asin": "B0FS7QVSVC",
         "est_monthly_sales": null,
         "category": null,
         "bsr": null,
@@ -41,8 +41,8 @@
     ],
     "google_trends": {
       "US": {
-        "Centellian24": null,
-        "Madeca Cream": null
+        "Centellian24": 11,
+        "Madeca Cream": 41
       },
       "JP": {
         "Centellian24": 0,
@@ -50,50 +50,42 @@
       }
     },
     "ulta": {
-      "review_count": 0,
+      "review_count": null,
       "rating": 4.7,
       "sku_count": 1,
       "in_stock": true,
       "sources": [
-        "1",
-        "2",
-        "5",
-        "6"
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSqEppLyQgF0Uh1pr5Br6RQ_XQylbULKx49vQdORMvTEc4Qdwbv8ti0PsUyYa_JliKEmoisov-id7ALQvwybQ_qNXKCkJbu1Nuye8utLr6XwlE0pjxLEi4AZO4okYIHQAs7BZQJZMXN-2XNQYI7RYm4et7nBI5mdaGOvPqZpt9v3jc",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjRIWH8NKLj61wHPRNKfb7LkqTsRc0_R7msA8sw53gZa2hQe8kTd-kimU5bSJIURrFLDYzq3bobMT_If2-a8wL4QI0UIzebIFFDurCUuO0N4bfFy3zxZlMzTjqLNPBT2WuLoB6M5LM33yMx6G1IWsYVIh8KOUdoAsD4L0BzthEZK6Gj5D5XA==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuUxLKIw2GqKjNXgtGxLhJCGTYrUEqEhVnwJWJ5CsjfD6l9PAlbIKTbCCOeqxvNKKfNKKHG5hcdZ7K_cEiAqD_i4vcvQ129BxESPY4L53VUVJfqoEr2ZoQZjAQlyFXgor6knpXsMGWtkAKZAeDofwR-yBhxZ7dlZeKFEcvytnu-pRs",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFe1QHQX_u54bWocJlaWf03ZZPM_ZFdTLOB8yvrCskVTryvC8Rgz2ZVKa9QW_EYl-2fobCF9N7CLH9_lhGzffzjaoIa8fD7pYgifsbMkmgL0ndhIuolS40fYoudu646rzhsEw==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnJ4B_2ZufBuHcJnkCYSqDBRmiRio2rQ8ncgQfw8VxRA3_OuFcX5J2lVOuwbIoJDmO5DuldSExa2esT-bZst4me4U2ITuLyGcfORBkBWJtsU6lUn9EDUjsjp8xYXrDsjhg0gjXwiOHaEaVtHzstFKt6hcxAg=="
       ],
       "source": "gemini_grounding",
       "confidence": "low"
     },
     "tiktok": {
       "hashtag": "#Centellian24",
-      "post_count_est": 100000,
-      "top_view_count_est": 1000000,
-      "sources": [
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFf1m9-MhR_gmhTVD6Rr2pij5W8_OLmNcuJULzHG9Fe0_i9y1hX5OC8N_OeUV_FP5BBI0OIbPyit3CM27948FaxRAAxocFH_1waf_2I574ARTffNITYxTYDnkylqHbovShJs767jWNK0Vs_QUb9pEI0atTGx7hOAPShqbGHolODXiHLAd3JjEvadBU3Rs_CO9tRMp88unV3yqY5TB-DmWNls5UCmXIwy_uOtiglf2HLhTtsmI3GIBS5qg=="
-      ],
+      "post_count_est": null,
+      "top_view_count_est": null,
+      "sources": [],
       "source": "gemini_grounding",
-      "confidence": "low"
+      "confidence": "failed"
     },
     "instagram": {
       "hashtag": "#Centellian24",
-      "post_count_est": 0,
-      "sources": [
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZna91dnhL1YFBSfllkVpIa30NAeaNyBHZTQTFHu61e0xfKWVGxf_qhGEGXE94pLzBuwV4lJ9SNNIA3o-ymYC9qxlyjzJHrkciu_HJvhACb7JGHtNrVVnZGmSjQoDBde9sER_Pog==",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGe_laKJqhjc21ZDhiCvb8Qm-_fKIedBO-UEbttMUta8SF2UA8HA0jqM4nl_K-tzfwgA_QbEUkhBDK-EUsnG2hW3buFBSXPXA3F9yG7QE67xO1CHBfS3V8YKNC9VDG2RfH_-R4fkjbpm1R6wPc7UMDv",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGxzL2Mz2JkJo0z1VljpLLvrAQfOoBiV6kSi7oPiZkkoNBs3KNS6r3hQuKQPo0UJcGs4mUpzAO12N5ZLOa-7JrIzMpffXcHmAC9GXShBAL0ddWKO0PjbQEW6kKw-xRokMHdr6Q5qPK9f4G"
-      ],
+      "post_count_est": null,
+      "sources": [],
       "source": "gemini_grounding",
-      "confidence": "low"
+      "confidence": "failed"
     },
-    "ai_summary": "센텔리안24의 이번 주 미국/일본 시장 지표에 따르면, 아마존에서는 주요 제품들의 추정 판매량, BSR, 리뷰 데이터가 모두 확인되지 않았습니다. Google Trends에서는 미국 검색량 데이터가 부재하고 일본에서는 검색 관심도가 0으로 나타나 현재 온라인 인지도가 낮은 것으로 보입니다.\n\nUlta에서는 1개의 SKU가 판매 중이며 4.7점의 평점을 받았지만 리뷰 수는 0건이었고, 이 데이터는 낮은 신뢰도를 보였습니다. 소셜 미디어에서는 TikTok의 #Centellian24 해시태그가 추정 포스트 수 10만 건, 최고 추정 조회수 100만 건을 기록한 반면, Instagram에서는 동일 해시태그의 추정 포스트 수가 0건으로 나타났습니다. Ulta 및 소셜 미디어 지표들의 추정치는 전반적으로 낮은 신뢰도를 가집니다.",
+    "ai_summary": "센텔리안24의 이번 주 미국/일본 시장 지표를 보면, 아마존에서는 '마데카 크림 타임 리버스', '360도 샷 PDRN 리프팅 아이크림', '마데카 크림 액티브 리뉴 PDRN' 등 주요 제품들의 추정 판매량, BSR, 리뷰 등 핵심 데이터가 현재 모두 누락되어 있습니다. Google Trends 지표에 따르면, 미국에서는 'Madeca Cream' 검색 관심도(41)가 'Centellian24'(11)보다 높게 나타났으나, 일본에서는 두 키워드 모두 검색 관심도가 0으로 미미한 수준입니다. Ulta에서는 1개의 SKU가 재고 있음 상태로 4.7점의 높은 평점으로 판매 중이지만 리뷰 수는 확인되지 않았고, 해당 데이터의 신뢰도는 낮음으로 추정됩니다. 틱톡과 인스타그램에서는 #Centellian24 관련 추정 게시물 및 조회수 데이터가 확보되지 않아 소셜 미디어 활동을 파악하기 어렵습니다.",
     "sources": [
-      "1",
-      "2",
-      "5",
-      "6",
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFf1m9-MhR_gmhTVD6Rr2pij5W8_OLmNcuJULzHG9Fe0_i9y1hX5OC8N_OeUV_FP5BBI0OIbPyit3CM27948FaxRAAxocFH_1waf_2I574ARTffNITYxTYDnkylqHbovShJs767jWNK0Vs_QUb9pEI0atTGx7hOAPShqbGHolODXiHLAd3JjEvadBU3Rs_CO9tRMp88unV3yqY5TB-DmWNls5UCmXIwy_uOtiglf2HLhTtsmI3GIBS5qg==",
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFZna91dnhL1YFBSfllkVpIa30NAeaNyBHZTQTFHu61e0xfKWVGxf_qhGEGXE94pLzBuwV4lJ9SNNIA3o-ymYC9qxlyjzJHrkciu_HJvhACb7JGHtNrVVnZGmSjQoDBde9sER_Pog==",
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGe_laKJqhjc21ZDhiCvb8Qm-_fKIedBO-UEbttMUta8SF2UA8HA0jqM4nl_K-tzfwgA_QbEUkhBDK-EUsnG2hW3buFBSXPXA3F9yG7QE67xO1CHBfS3V8YKNC9VDG2RfH_-R4fkjbpm1R6wPc7UMDv",
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFGxzL2Mz2JkJo0z1VljpLLvrAQfOoBiV6kSi7oPiZkkoNBs3KNS6r3hQuKQPo0UJcGs4mUpzAO12N5ZLOa-7JrIzMpffXcHmAC9GXShBAL0ddWKO0PjbQEW6kKw-xRokMHdr6Q5qPK9f4G"
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSqEppLyQgF0Uh1pr5Br6RQ_XQylbULKx49vQdORMvTEc4Qdwbv8ti0PsUyYa_JliKEmoisov-id7ALQvwybQ_qNXKCkJbu1Nuye8utLr6XwlE0pjxLEi4AZO4okYIHQAs7BZQJZMXN-2XNQYI7RYm4et7nBI5mdaGOvPqZpt9v3jc",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGjRIWH8NKLj61wHPRNKfb7LkqTsRc0_R7msA8sw53gZa2hQe8kTd-kimU5bSJIURrFLDYzq3bobMT_If2-a8wL4QI0UIzebIFFDurCUuO0N4bfFy3zxZlMzTjqLNPBT2WuLoB6M5LM33yMx6G1IWsYVIh8KOUdoAsD4L0BzthEZK6Gj5D5XA==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEuUxLKIw2GqKjNXgtGxLhJCGTYrUEqEhVnwJWJ5CsjfD6l9PAlbIKTbCCOeqxvNKKfNKKHG5hcdZ7K_cEiAqD_i4vcvQ129BxESPY4L53VUVJfqoEr2ZoQZjAQlyFXgor6knpXsMGWtkAKZAeDofwR-yBhxZ7dlZeKFEcvytnu-pRs",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFe1QHQX_u54bWocJlaWf03ZZPM_ZFdTLOB8yvrCskVTryvC8Rgz2ZVKa9QW_EYl-2fobCF9N7CLH9_lhGzffzjaoIa8fD7pYgifsbMkmgL0ndhIuolS40fYoudu646rzhsEw==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnJ4B_2ZufBuHcJnkCYSqDBRmiRio2rQ8ncgQfw8VxRA3_OuFcX5J2lVOuwbIoJDmO5DuldSExa2esT-bZst4me4U2ITuLyGcfORBkBWJtsU6lUn9EDUjsjp8xYXrDsjhg0gjXwiOHaEaVtHzstFKt6hcxAg=="
     ]
   }
 ]
