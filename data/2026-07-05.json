@@ -18,7 +18,7 @@
     },
     {
       "product": "360도 샷 PDRN 리프팅 아이크림",
-      "asin": "B0H2DPL69S",
+      "asin": null,
       "est_monthly_sales": null,
       "category": null,
       "bsr": null,
@@ -33,7 +33,7 @@
     },
     {
       "product": "마데카 크림 액티브 리뉴 PDRN",
-      "asin": "B0FS7QVSVC",
+      "asin": null,
       "est_monthly_sales": null,
       "category": null,
       "bsr": null,
@@ -53,8 +53,8 @@
       "Madeca Cream": 44
     },
     "JP": {
-      "Centellian24": null,
-      "Madeca Cream": null
+      "Centellian24": 19,
+      "Madeca Cream": 32
     }
   },
   "qoo10_jp": [
@@ -74,8 +74,8 @@
     "sku_count": 1,
     "in_stock": true,
     "sources": [
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUBwaLRkx88mwUGYjD6ljdKx5GQH3ZyGNR_Tv48IIflmtjGteQJjzo8OCU1JjcrH7JWrWXdAgcxD80ePfd53jHklE_-yBQ2hmJN8_0WmxLGYb6votiYsuwlfewknXl6638yg==",
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1jt14GzDr-3JoK-z4IgQ6G0aOYxm4aAcRAwltSpgTS_I16yG9E708sxcl7uXSYJLQ_dU_O6YGGWNHFyc4iQ8KgIUX4zhoDMPmWcIZQ7Uhbtwlj7ziVQKjrDhZJ927T_rqS02PMLfRZz207_z8MtbEo3wyyEWL_jJ9vOIzXCJ67LfzHMdYtQ=="
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHlxCq3tU2hKr0NHDe5sni-Plqau7-Wnp4lcBStfE_6J4AqRtV9Ipnx8ZYwSXWulmLuSP9T_A_SYlcplOhIiSw_R3AwcosuKiKKhC4MY5WO6w5GOGg9KtumdzlEyowCPMLctBofl0_TfJ1RmAWDgcoJjHAGx6TGj6LrFl_dRXLBx7FfX5VB0w==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdqIHTeOPPh32r0ZXGaAGy47z86ELxGFFKvGLPm8UTIuTLNjjr3QxYyTu0EowHBxjM_76fgE4VIoozw2v1lhZq1RY7tag2E1lDRO4kvrUL6wclQorr1HilD9YWfZxmKZxV1A=="
     ],
     "source": "gemini_grounding",
     "confidence": "low"
@@ -92,15 +92,15 @@
     "hashtag": "#Centellian24",
     "post_count_est": -1,
     "sources": [
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1lcBFEjJP4j4FJjmYoX_tEN3wBZvCLkMtY9C4_9-Y2i0QlOBxQSy7RXX6ZTfaH9ux71VL3oayitKRC_vaVf9daEwkoXFhgoOeoEoBjrFP4WDlMilbggSFJ2CN0yjD4Bj2FywU5ezP1ngvelf0IYxtYCgKllf03UiFVEcXGX6hsEdp3Z_F3bJL1DGt81qn0Gn6b9ynn-XTr-oBSy7hYd9B"
+      "The number of posts for #Centellian24 on Instagram could not be found through general web searches. Instagram's native analytics are limited, and third-party tools that provide this specific, real-time data are not accessible via web search results."
     ],
     "source": "gemini_grounding",
     "confidence": "low"
   },
-  "ai_summary": "센텔리안24는 이번 주 아마존 미국/일본 시장에서 제품별 추정 판매량, BSR, 리뷰 등 주요 지표 데이터가 현재 확인되지 않습니다. Google Trends 미국 데이터에 따르면 'Madeca Cream'은 검색량 44를 기록하며 'Centellian24'(검색량 13)보다 높은 관심을 보였으나, 일본에서는 관련 검색량이 확인되지 않습니다. Ulta에서는 1개 SKU가 18개의 리뷰와 4.8점의 평점으로 재고가 있는 상태이지만, 이 데이터의 신뢰도는 낮게 평가됩니다. TikTok 및 Instagram의 추정 해시태그 게시물 수는 미미하거나 확인되지 않는 수준이며, 이 추정치들의 신뢰도 또한 낮습니다.",
+  "ai_summary": "센텔리안24의 이번 주 미국/일본 시장 지표를 보면, 아마존과 Qoo10 Japan에서는 주요 제품의 추정 판매량, BSR, 리뷰 등 구체적인 지표가 현재 수집되지 않았습니다. Google 트렌드에서 'Madeca Cream'은 미국(44)과 일본(32) 모두에서 'Centellian24' 브랜드명보다 높은 검색 관심도를 보입니다. Ulta에서는 1개 SKU가 18개 리뷰에 추정 4.8점의 높은 평점을 기록했으나, 이 데이터의 신뢰도는 낮게 평가되었습니다. TikTok과 인스타그램에서 #Centellian24 해시태그 관련 추정 활동은 미미하거나 파악되지 않고 있으며, 이들의 신뢰도 또한 낮습니다.",
   "sources": [
-    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUBwaLRkx88mwUGYjD6ljdKx5GQH3ZyGNR_Tv48IIflmtjGteQJjzo8OCU1JjcrH7JWrWXdAgcxD80ePfd53jHklE_-yBQ2hmJN8_0WmxLGYb6votiYsuwlfewknXl6638yg==",
-    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1jt14GzDr-3JoK-z4IgQ6G0aOYxm4aAcRAwltSpgTS_I16yG9E708sxcl7uXSYJLQ_dU_O6YGGWNHFyc4iQ8KgIUX4zhoDMPmWcIZQ7Uhbtwlj7ziVQKjrDhZJ927T_rqS02PMLfRZz207_z8MtbEo3wyyEWL_jJ9vOIzXCJ67LfzHMdYtQ==",
-    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1lcBFEjJP4j4FJjmYoX_tEN3wBZvCLkMtY9C4_9-Y2i0QlOBxQSy7RXX6ZTfaH9ux71VL3oayitKRC_vaVf9daEwkoXFhgoOeoEoBjrFP4WDlMilbggSFJ2CN0yjD4Bj2FywU5ezP1ngvelf0IYxtYCgKllf03UiFVEcXGX6hsEdp3Z_F3bJL1DGt81qn0Gn6b9ynn-XTr-oBSy7hYd9B"
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHlxCq3tU2hKr0NHDe5sni-Plqau7-Wnp4lcBStfE_6J4AqRtV9Ipnx8ZYwSXWulmLuSP9T_A_SYlcplOhIiSw_R3AwcosuKiKKhC4MY5WO6w5GOGg9KtumdzlEyowCPMLctBofl0_TfJ1RmAWDgcoJjHAGx6TGj6LrFl_dRXLBx7FfX5VB0w==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdqIHTeOPPh32r0ZXGaAGy47z86ELxGFFKvGLPm8UTIuTLNjjr3QxYyTu0EowHBxjM_76fgE4VIoozw2v1lhZq1RY7tag2E1lDRO4kvrUL6wclQorr1HilD9YWfZxmKZxV1A==",
+    "The number of posts for #Centellian24 on Instagram could not be found through general web searches. Instagram's native analytics are limited, and third-party tools that provide this specific, real-time data are not accessible via web search results."
   ]
 }
