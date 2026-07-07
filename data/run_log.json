@@ -30,5 +30,21 @@
       "git_push": true
     },
     "error": null
+  },
+  {
+    "week": "2026-07-05",
+    "run_started_at": "2026-07-07T23:58:23",
+    "success": true,
+    "channels": {
+      "amazon": false,
+      "google_trends": true,
+      "qoo10_jp": false,
+      "ulta": true,
+      "tiktok": true,
+      "instagram": true,
+      "ai_summary": true,
+      "git_push": true
+    },
+    "error": null
   }
 ]

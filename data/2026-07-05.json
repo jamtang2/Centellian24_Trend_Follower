@@ -3,29 +3,29 @@
   "amazon": [
     {
       "product": "마데카 크림 타임 리버스",
-      "asin": null,
+      "asin": "B0DFY92NDB",
       "est_monthly_sales": null,
-      "category": null,
-      "bsr": null,
-      "review_count": null,
-      "rating": null,
+      "category": "Beauty & Personal Care",
+      "bsr": 367,
+      "review_count": 5011,
+      "rating": 4.6,
       "in_stock": null,
-      "price": null,
+      "price": 33565.0,
       "source": "scrape",
-      "sentiment_score": null,
-      "sentiment_summary": "",
-      "sentiment_confidence": "low"
+      "sentiment_score": 98,
+      "sentiment_summary": "소비자들은 센텔리안24 제품에 대해 압도적으로 긍정적인 평가를 내리고 있으며, 특히 뛰어난 보습력과 수분 공급 효과를 높이 평가합니다. 사용자들은 이 제품이 피부를 부드럽고 매끄러우며 건강하게 빛나게 하면서도 끈적임 없이 흡수된다고 칭찬하며, 효과와 가치를 들어 강력히 추천하는 경향을 보입니다.",
+      "sentiment_confidence": "normal"
     },
     {
       "product": "360도 샷 PDRN 리프팅 아이크림",
-      "asin": null,
+      "asin": "B0H2DPL69S",
       "est_monthly_sales": null,
-      "category": null,
-      "bsr": null,
+      "category": "Beauty & Personal Care",
+      "bsr": 153049,
       "review_count": null,
       "rating": null,
       "in_stock": null,
-      "price": null,
+      "price": 13992.0,
       "source": "scrape",
       "sentiment_score": null,
       "sentiment_summary": "",
@@ -33,14 +33,14 @@
     },
     {
       "product": "마데카 크림 액티브 리뉴 PDRN",
-      "asin": null,
-      "est_monthly_sales": null,
-      "category": null,
-      "bsr": null,
-      "review_count": null,
-      "rating": null,
-      "in_stock": null,
-      "price": null,
+      "asin": "B0G9D2GFBK",
+      "est_monthly_sales": 50,
+      "category": "Beauty & Personal Care",
+      "bsr": 140818,
+      "review_count": 14,
+      "rating": 4.6,
+      "in_stock": true,
+      "price": 22705.0,
       "source": "scrape",
       "sentiment_score": null,
       "sentiment_summary": "",
@@ -53,8 +53,8 @@
       "Madeca Cream": 44
     },
     "JP": {
-      "Centellian24": 19,
-      "Madeca Cream": 32
+      "Centellian24": 18,
+      "Madeca Cream": 31
     }
   },
   "qoo10_jp": [
@@ -62,9 +62,9 @@
       "product": "마데카 크림",
       "sales_badge": null,
       "category_rank": null,
-      "review_count": null,
-      "rating": null,
-      "in_stock": null,
+      "review_count": 1172,
+      "rating": 4.7,
+      "in_stock": true,
       "source": "scrape"
     }
   ],
@@ -74,8 +74,8 @@
     "sku_count": 1,
     "in_stock": true,
     "sources": [
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHlxCq3tU2hKr0NHDe5sni-Plqau7-Wnp4lcBStfE_6J4AqRtV9Ipnx8ZYwSXWulmLuSP9T_A_SYlcplOhIiSw_R3AwcosuKiKKhC4MY5WO6w5GOGg9KtumdzlEyowCPMLctBofl0_TfJ1RmAWDgcoJjHAGx6TGj6LrFl_dRXLBx7FfX5VB0w==",
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdqIHTeOPPh32r0ZXGaAGy47z86ELxGFFKvGLPm8UTIuTLNjjr3QxYyTu0EowHBxjM_76fgE4VIoozw2v1lhZq1RY7tag2E1lDRO4kvrUL6wclQorr1HilD9YWfZxmKZxV1A=="
+      2,
+      4
     ],
     "source": "gemini_grounding",
     "confidence": "low"
@@ -84,23 +84,34 @@
     "hashtag": "#Centellian24",
     "post_count_est": 0,
     "top_view_count_est": 0,
-    "sources": [],
+    "sources": [
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuQGStJh1LnHQiZoFA6W01FELOoNGoUMJnN3qUEK5XESsHKwLTN5aqILq0FVrkhUgAKzLAFoXV8d2yAhW2QB8QcmXsSGHCAFh5jCg30qWpbSBG2TBkhrAq_b_WFShPM1wLHJQgsK2Zc074BA4=",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1RPCVJ20p3r4FSOc5HSs8SN62QlZFQdS4Y4RlciHzjTBDnpwSalVRKRPjZa7ERJBXZkbK7b-vLnCCC06PBpjotF61teYWc2WEjFX4BcuURSW5UVJprFR47Ximto_vSx2u6fjFoFInjQfhNtrAkVtc-DI=",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfzFIMQcnctlA2kfoKLgmAFx0Ll0Vr1UK7SVpSyYSQHDFtnMcvoiJ2ExMsB9ShZr-J6WWcu5AE6myri-DFpKc1iQXaO0eCcYAV8nQhZPZ734L6JsufA0-RZcqyOwX-w8ZfF5-aiiuvU229bPghZJelz0kivnU="
+    ],
     "source": "gemini_grounding",
     "confidence": "low"
   },
   "instagram": {
     "hashtag": "#Centellian24",
-    "post_count_est": -1,
+    "post_count_est": 0,
     "sources": [
-      "The number of posts for #Centellian24 on Instagram could not be found through general web searches. Instagram's native analytics are limited, and third-party tools that provide this specific, real-time data are not accessible via web search results."
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHYS95wgVqrsRGaur1NdxovZH2pW23-U55NszkrfHVqtmsgIQBZNrwkDBo0wWwUFtFeXizusmKxvs362hL5zDPSTA7ZtXhBs2Ua36RBYtTAxt4sFiCNNmaTI3FNLvKB7XVSf2MuTjZhUNZomLeZngFx",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDI_gfifliIFKSO0RIQ3X8rjDNbh9CNDoDXRLKwIwqQpHo1Oorb7Ch0jV8tHd81R-SZNIflm3K3VX6K00zXKjckKoS8XPUFqMvFbXNgZvQoSyMJ8u36xlZJJMfxpgSlf5-4rDoHDMt4FI_KhVvR11ByHIuv5WAkjq39xAHRH24XkL806Cw",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBwAyit_6Pl8_MZBuUO8uQ-lslxx3b8_XFFFvpIOtrRnD0hK3znOiUcb_GMCQ5jWKgXoNA3jK8pBZq8RwElEWkOD6Aow06N9r6OIC5uWO0rkYrpyg61PvzIYV8hKNnw2SjrcwXmzq7A85r"
     ],
     "source": "gemini_grounding",
     "confidence": "low"
   },
-  "ai_summary": "센텔리안24의 이번 주 미국/일본 시장 지표를 보면, 아마존과 Qoo10 Japan에서는 주요 제품의 추정 판매량, BSR, 리뷰 등 구체적인 지표가 현재 수집되지 않았습니다. Google 트렌드에서 'Madeca Cream'은 미국(44)과 일본(32) 모두에서 'Centellian24' 브랜드명보다 높은 검색 관심도를 보입니다. Ulta에서는 1개 SKU가 18개 리뷰에 추정 4.8점의 높은 평점을 기록했으나, 이 데이터의 신뢰도는 낮게 평가되었습니다. TikTok과 인스타그램에서 #Centellian24 해시태그 관련 추정 활동은 미미하거나 파악되지 않고 있으며, 이들의 신뢰도 또한 낮습니다.",
+  "ai_summary": "센텔리안24의 이번 주 시장 지표에 따르면, 아마존에서는 '마데카 크림 타임 리버스'가 BSR 367위, 5,011개의 리뷰와 4.6점의 높은 평점, 그리고 98점의 매우 긍정적인 소비자 정서를 보이며 강세를 나타냈습니다. 반면 '마데카 크림 액티브 리뉴 PDRN'은 **추정** 월 판매량 50건을 기록했지만, 다른 제품들은 판매량이나 리뷰 데이터가 부족했습니다.\n\n구글 트렌드에서는 미국과 일본 모두 'Madeca Cream'이 'Centellian24' 브랜드명보다 높은 검색 관심을 보였으나 전반적인 검색량은 낮은 수준입니다. 일본 Qoo10에서는 '마데카 크림'이 1,172개의 리뷰와 평점 4.7점으로 긍정적인 평가를 받고 있습니다.\n\nUlta에서는 1개 SKU와 18개 리뷰에도 불구하고 평점 4.8점으로 높은 만족도를 보이지만, TikTok과 Instagram의 #Centellian24 해시태그 게시물 및 조회수는 현재 **추정** 0건으로 소셜 미디어 활동은 거의 없는 것으로 나타났으며, Ulta와 소셜 미디어 데이터의 신뢰도는 낮은 편입니다.",
   "sources": [
-    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHlxCq3tU2hKr0NHDe5sni-Plqau7-Wnp4lcBStfE_6J4AqRtV9Ipnx8ZYwSXWulmLuSP9T_A_SYlcplOhIiSw_R3AwcosuKiKKhC4MY5WO6w5GOGg9KtumdzlEyowCPMLctBofl0_TfJ1RmAWDgcoJjHAGx6TGj6LrFl_dRXLBx7FfX5VB0w==",
-    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFdqIHTeOPPh32r0ZXGaAGy47z86ELxGFFKvGLPm8UTIuTLNjjr3QxYyTu0EowHBxjM_76fgE4VIoozw2v1lhZq1RY7tag2E1lDRO4kvrUL6wclQorr1HilD9YWfZxmKZxV1A==",
-    "The number of posts for #Centellian24 on Instagram could not be found through general web searches. Instagram's native analytics are limited, and third-party tools that provide this specific, real-time data are not accessible via web search results."
+    2,
+    4,
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuQGStJh1LnHQiZoFA6W01FELOoNGoUMJnN3qUEK5XESsHKwLTN5aqILq0FVrkhUgAKzLAFoXV8d2yAhW2QB8QcmXsSGHCAFh5jCg30qWpbSBG2TBkhrAq_b_WFShPM1wLHJQgsK2Zc074BA4=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1RPCVJ20p3r4FSOc5HSs8SN62QlZFQdS4Y4RlciHzjTBDnpwSalVRKRPjZa7ERJBXZkbK7b-vLnCCC06PBpjotF61teYWc2WEjFX4BcuURSW5UVJprFR47Ximto_vSx2u6fjFoFInjQfhNtrAkVtc-DI=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfzFIMQcnctlA2kfoKLgmAFx0Ll0Vr1UK7SVpSyYSQHDFtnMcvoiJ2ExMsB9ShZr-J6WWcu5AE6myri-DFpKc1iQXaO0eCcYAV8nQhZPZ734L6JsufA0-RZcqyOwX-w8ZfF5-aiiuvU229bPghZJelz0kivnU=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHYS95wgVqrsRGaur1NdxovZH2pW23-U55NszkrfHVqtmsgIQBZNrwkDBo0wWwUFtFeXizusmKxvs362hL5zDPSTA7ZtXhBs2Ua36RBYtTAxt4sFiCNNmaTI3FNLvKB7XVSf2MuTjZhUNZomLeZngFx",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDI_gfifliIFKSO0RIQ3X8rjDNbh9CNDoDXRLKwIwqQpHo1Oorb7Ch0jV8tHd81R-SZNIflm3K3VX6K00zXKjckKoS8XPUFqMvFbXNgZvQoSyMJ8u36xlZJJMfxpgSlf5-4rDoHDMt4FI_KhVvR11ByHIuv5WAkjq39xAHRH24XkL806Cw",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBwAyit_6Pl8_MZBuUO8uQ-lslxx3b8_XFFFvpIOtrRnD0hK3znOiUcb_GMCQ5jWKgXoNA3jK8pBZq8RwElEWkOD6Aow06N9r6OIC5uWO0rkYrpyg61PvzIYV8hKNnw2SjrcwXmzq7A85r"
   ]
 }
