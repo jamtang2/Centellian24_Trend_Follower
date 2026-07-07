@@ -197,6 +197,12 @@ function trendsRegionAvg(week, region) {
 function ultaReviewCount(week) {
   return (week.ulta || {}).review_count ?? null;
 }
+function qoo10TotalReviews(week) {
+  return sum((week.qoo10_jp || []).map((p) => p.review_count));
+}
+function amazonAvgSentiment(week) {
+  return average((week.amazon || []).map((p) => p.sentiment_score));
+}
 function socialPostCount(week) {
   return sum([(week.tiktok || {}).post_count_est, (week.instagram || {}).post_count_est]);
 }
@@ -332,17 +338,37 @@ function renderCharts(history) {
     baseLineDataset("TikTok 대표 조회수(추정)", history.map((w) => (w.tiktok || {}).top_view_count_est ?? null), palette(2)),
   ];
 
+  // Chart 6: Amazon (US) vs Qoo10 Japan review-count proxy comparison
+  const compareDatasets = [
+    baseLineDataset("아마존 리뷰 수(합계, 미국)", history.map(amazonTotalReviews), palette(0)),
+    baseLineDataset("Qoo10 재팬 리뷰 수(합계)", history.map(qoo10TotalReviews), palette(1)),
+  ];
+
+  // Chart 7: Amazon review sentiment score per product (0-100)
+  const sentimentDatasets = productNames.map((name, i) => baseLineDataset(
+    name,
+    history.map((w) => {
+      const p = (w.amazon || []).find((p) => p.product === name);
+      return p ? p.sentiment_score : null;
+    }),
+    palette(i),
+  ));
+
   const charts = [
     { id: "chart-sales", title: "아마존 제품별 추정 월간 판매량 추이", badges: ["measured"], datasets: salesDatasets, options: {} },
     { id: "chart-bsr", title: "아마존 BSR 순위 추이 (낮을수록 상위)", badges: ["measured"], datasets: bsrDatasets, options: { scales: { y: { reverse: true } } } },
     { id: "chart-reviews", title: "아마존/Ulta 리뷰 수 누적 추이", badges: ["measured", "estimate"], datasets: reviewDatasets, options: {} },
     { id: "chart-trends", title: "Google Trends 지수 추이 (US vs JP)", badges: ["measured"], datasets: trendsDatasets, options: {} },
     { id: "chart-social", title: "TikTok / Instagram 게시물·조회수 추이", badges: ["estimate"], datasets: socialDatasets, options: {} },
+    { id: "chart-compare", title: "아마존(미국) vs Qoo10 재팬 리뷰 수 비교", badges: ["measured"], datasets: compareDatasets, options: {} },
+    { id: "chart-sentiment", title: "아마존 리뷰 감성 점수 추이 (0~100)", badges: ["estimate-analysis"], datasets: sentimentDatasets, options: { scales: { y: { min: 0, max: 100 } } } },
   ];
 
-  const badgeHtml = (kinds) => `<div class="badges">${kinds.map((k) =>
-    k === "measured" ? `<span class="badge measured">실측</span>` : `<span class="badge estimate">추정 (Gemini grounding)</span>`
-  ).join("")}</div>`;
+  const badgeHtml = (kinds) => `<div class="badges">${kinds.map((k) => {
+    if (k === "measured") return `<span class="badge measured">실측</span>`;
+    if (k === "estimate-analysis") return `<span class="badge estimate">추정 (Gemini 리뷰 분석)</span>`;
+    return `<span class="badge estimate">추정 (Gemini grounding)</span>`;
+  }).join("")}</div>`;
 
   const html = `<div class="charts">${charts.map((c) => `
     <div class="chart-card">
