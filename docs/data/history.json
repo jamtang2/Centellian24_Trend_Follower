@@ -83,28 +83,50 @@
     },
     "tiktok": {
       "hashtag": "#Centellian24",
-      "post_count_est": 0,
-      "top_view_count_est": 0,
+      "post_count_est": 40000,
+      "top_view_count_est": 5000000,
       "sources": [
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFuQGStJh1LnHQiZoFA6W01FELOoNGoUMJnN3qUEK5XESsHKwLTN5aqILq0FVrkhUgAKzLAFoXV8d2yAhW2QB8QcmXsSGHCAFh5jCg30qWpbSBG2TBkhrAq_b_WFShPM1wLHJQgsK2Zc074BA4=",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG1RPCVJ20p3r4FSOc5HSs8SN62QlZFQdS4Y4RlciHzjTBDnpwSalVRKRPjZa7ERJBXZkbK7b-vLnCCC06PBpjotF61teYWc2WEjFX4BcuURSW5UVJprFR47Ximto_vSx2u6fjFoFInjQfhNtrAkVtc-DI=",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFfzFIMQcnctlA2kfoKLgmAFx0Ll0Vr1UK7SVpSyYSQHDFtnMcvoiJ2ExMsB9ShZr-J6WWcu5AE6myri-DFpKc1iQXaO0eCcYAV8nQhZPZ734L6JsufA0-RZcqyOwX-w8ZfF5-aiiuvU229bPghZJelz0kivnU="
+        "cite: 1",
+        "cite: 3",
+        "cite: 4",
+        "cite: 5",
+        "cite: 6",
+        "cite: 7",
+        "cite: 9",
+        "cite: 11",
+        "cite: 13",
+        "cite: 15",
+        "cite: 18",
+        "cite: 20",
+        "cite: 21",
+        "cite: 24"
       ],
       "source": "gemini_grounding",
       "confidence": "low"
     },
     "instagram": {
       "hashtag": "#Centellian24",
-      "post_count_est": 0,
+      "post_count_est": 100000,
       "sources": [
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHYS95wgVqrsRGaur1NdxovZH2pW23-U55NszkrfHVqtmsgIQBZNrwkDBo0wWwUFtFeXizusmKxvs362hL5zDPSTA7ZtXhBs2Ua36RBYtTAxt4sFiCNNmaTI3FNLvKB7XVSf2MuTjZhUNZomLeZngFx",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEDI_gfifliIFKSO0RIQ3X8rjDNbh9CNDoDXRLKwIwqQpHo1Oorb7Ch0jV8tHd81R-SZNIflm3K3VX6K00zXKjckKoS8XPUFqMvFbXNgZvQoSyMJ8u36xlZJJMfxpgSlf5-4rDoHDMt4FI_KhVvR11ByHIuv5WAkjq39xAHRH24XkL806Cw",
-        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBwAyit_6Pl8_MZBuUO8uQ-lslxx3b8_XFFFvpIOtrRnD0hK3znOiUcb_GMCQ5jWKgXoNA3jK8pBZq8RwElEWkOD6Aow06N9r6OIC5uWO0rkYrpyg61PvzIYV8hKNnw2SjrcwXmzq7A85r"
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGauoDpFhLxrnD-M2OyG9o2G_sOzSmaAH4FUOOXL9F5U4sgvS5avvtHjkQAr7_MTSZLmagcGZfsXb-VSb1GB7ER4hEWF4Q75dzhpf9fc4JHH7MEnM-rEprO6QNjAbnFLJb6FrEdZyLCnw3mj5BIp1rv_-_AEUT2iy0=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEucWQ87E54FuJLi5LxB-vpY9UyeRGyWD7gTw0FZnHm7RI59wcY-vj0yvBFSnwBJl1f5NEBw9ks4CpeWTkdPzgRee0znD9m3cFN4qiwvIMdBVfU3YAeJckOeIW5uiOQULA7oN5JIFskg_RtkLjn3wUteg==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEKRdInncpqNG0mLLGk-LvLXwqeT0c0UQ0h5J6Wmh_Dcj-f5A8ipdGR3HeaBwFB_z6bLmXD2Ukc34RYgWpI-925Wt3XQDiUGs7xDKJyNg_bE06BX_Q4stVJ-qZ7PHjkT-8izqXiywFxzdMzeEHnOIU=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFsLSLn0Tr-9NDYAVAIFOJ44xbcESoP3I4hqQ7ax5ZpupUciWoxRFJ9e_UD15v9DqUomQ6qAiVMknOrvg-qB4LOJLftOgKb9oOmPrL7xBYOvIYVD8YJQeL0bNGCwOpeI8a9SI1fz2BzEQ==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFouJxszs9_3NaZ0b5-EXhYBBecgwBfgIgyriGPL9hl0mPymtldVYQV4XJ56QFBKiXr4Fl6hYl5JgcQn2BCgk4X7aEy8pF9BMU6wOIlhDkwbt9OL0HjNpSsMlF8EZ-Pgbko6N6NqZNQQcIXqgQ03IB_HbfegpFk",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGKEXnIkyKdvUOLGGQ0RadpiodUXTaliOoQYlQQaz9-zPiBnRDRsUGcOI8o0qIHNyhbhXTL17GKGPWHZjhWVO34lOvKed8a0zbtUO0GJVHsHAqUD2qmqJnkmhGyvTp5nzFhSqlN9FDIiy8=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG3zsxa1LsbPj8olKQNU-K1bueErajEK2Zi1YXaC3zPocJhJNFazI97PmZ-NYXJfrc2Lxb-hg_30nEofQfurbCMpRcF-1NUFthOYo6-3zQ7FPkzPnWkdH_QojqlqU26NER0AiGbXA==",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG6yu4HMirdxBSCoX9yKXI16rVRCIyk4UHKL9sOP3_RNwyYx6VTIQ9EseqnGXlve-UoTPBTXB5J4HwhTBbHU1WSH9lFkA1sQxjx6xMELFr5hRQS5Gah7FMh22HsIa1dV-9iPzdj7qVKEyc7qwHTeRY=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAVfTKpoSg2sweil6LRqvsuZYqG0vHIBTDHJaVCzz5fA-UySoan_xoMOGl0n9kp51HON5nAcmOhzy5E2zh_T-UXyT9x_oezkbXEfpb9fHjWW4desiYLlOrjs2MKV16e8AxR59fU4JQ5zYTcN0=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQECcH54_Rr7Z4Ivhkyyghi_ci64BIkiawAJmlOheALB9Mf1zewpWedB-utvGSCr4tRUBi1Bc9iNoZOAtD7sVGXvh-DnyVLVJdIdoTVE6QzkVm9KO512rgALGzOO7bwAg0DZsV31tUxGLSvd1MO8gyoOGZDpvDts8YYrEZJS5jlI",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRiUgbxKXfzvfCeb9Ln0tO9ZKYcY46odF110Z4N6Qk7-MDlsYZvNoVKnT1NzR0rCoHeAttYYaQnWBLqBunrNGaJAT9plK_rHat3AgGkIXnHWW8oRMVjaNBL7Xu-GbaF3urs6dJ0iILxlcgTSGZQp6mGWKTX26PNQTDbpAMtWqeLg-WVT2G2BkjhkWycvnnpnMjHSk=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFkS3ubcK1fs1m_gSAJnb6zZyXZ-WE96oXvyHjrVgCi32eXhe1nmnHYfjv99exmMFy49XUBVwmh-Xm9gTMIhW5Gvj3dsO7-_TL-7SOxauzTVm-NffM3MjylPX6QalikWQrRApQ-GyA=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGt4ywZrlhmWWe4u2emfeeUH7IMRjxwbWnHl8hyd5BJvOtIWBVHbaSyCIZKPi3JjvUSU6yC8UvVvF_hxatge7bQGDMS2fzFq6qib6RDrjf8G29h-KLaNrSKbUhlja27JuJAmQoOC0eBlUI_Cfb4nkv32pkPUA9un2xRJbVzhzcdeK7PUAav2AsfCt0maiKkAG1hpOX8SjrsZAY_90-4M79rwN2ZC8L8kho=",
+        "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF80sHLsjc2c5RRxCXzfccovaW3pf7PLtN_CV2LK3vycmeTCyce_ZTpXNmySfA3oFnDSUx_YFMPJgUpnGMdAbRw84_C0-MDoAuwhbx5hPQo3vx4NYGlZR7Ct5Qza9ezPI6nTQDO4zYyyyDLyBwckficlZ9HoMEASjwS"
       ],
       "source": "gemini_grounding",
       "confidence": "low"
     },
-    "ai_summary": "센텔리안24의 이번 주 시장 지표에 따르면, 아마존에서는 '마데카 크림 타임 리버스'가 BSR 367위, 5,011개의 리뷰와 4.6점의 높은 평점, 그리고 98점의 매우 긍정적인 소비자 정서를 보이며 강세를 나타냈습니다. 반면 '마데카 크림 액티브 리뉴 PDRN'은 **추정** 월 판매량 50건을 기록했지만, 다른 제품들은 판매량이나 리뷰 데이터가 부족했습니다.\n\n구글 트렌드에서는 미국과 일본 모두 'Madeca Cream'이 'Centellian24' 브랜드명보다 높은 검색 관심을 보였으나 전반적인 검색량은 낮은 수준입니다. 일본 Qoo10에서는 '마데카 크림'이 1,172개의 리뷰와 평점 4.7점으로 긍정적인 평가를 받고 있습니다.\n\nUlta에서는 1개 SKU와 18개 리뷰에도 불구하고 평점 4.8점으로 높은 만족도를 보이지만, TikTok과 Instagram의 #Centellian24 해시태그 게시물 및 조회수는 현재 **추정** 0건으로 소셜 미디어 활동은 거의 없는 것으로 나타났으며, Ulta와 소셜 미디어 데이터의 신뢰도는 낮은 편입니다.",
+    "ai_summary": "센텔리안24는 현재 미국 아마존에서 '마데카 크림 타임 리버스'가 BSR 367위, 5천 건 이상의 리뷰(4.6점)를 기록하며 높은 소비자 반응을 보이고 있습니다. 다른 아마존 제품들은 추정 월 판매량이 낮고 BSR이 높은 편입니다.\n\n일본 Qoo10에서는 '마데카 크림'이 1천 건 이상의 리뷰와 4.7점의 높은 평점을 유지하고 있으며, 미국과 일본 구글 트렌드에서는 'Madeca Cream'의 검색 관심도가 브랜드명보다 높게 나타났습니다.\n\n소셜 미디어에서는 틱톡에서 #Centellian24 관련 추정 게시물 4만 개, 인스타그램에서 추정 게시물 10만 개를 기록하며 활발한 활동이 관찰됩니다. 다만, Ulta에는 1개 SKU가 입점되어 18개의 리뷰(4.8점)로 현재 영향력은 낮은 편입니다.",
     "sources": [
       2,
       4,

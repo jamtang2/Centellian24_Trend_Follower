@@ -24,3 +24,17 @@ PRODUCTS = [
 
 # Google Trends keywords (tracked for both US and JP regions).
 TRENDS_KEYWORDS = ["Centellian24", "Madeca Cream"]
+
+# Qoo10 Japan flagship SKUs to track. `goods_no` pins the numeric product ID
+# from a qoo10.jp/g/{goods_no} URL (recommended once confirmed, same rationale
+# as Amazon's `asin` above — avoids re-resolving via search each run).
+# 680631925 confirmed (2026-07) against a real saved product page — see
+# scripts/collect_qoo10.py docstring for the verified JSON-LD-based parsing
+# approach.
+QOO10_PRODUCTS = [
+    {
+        "product": "마데카 크림",
+        "goods_no": "680631925",
+        "search_keyword": "センテリアン24 マデカクリーム",
+    },
+]

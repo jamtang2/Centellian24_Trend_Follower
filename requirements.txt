@@ -3,3 +3,5 @@ beautifulsoup4
 pytrends
 google-genai
 python-dotenv
+plyer
+playwright

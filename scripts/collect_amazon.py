@@ -1,50 +1,53 @@
 """Amazon scraping: estimated monthly sales, BSR, review count, rating, price, stock.
 
-Uses requests + BeautifulSoup against public search/product-detail pages
-(no Product Advertising API, no paid scraping service). Amazon's HTML is
-unstable and bot-defensive, so every field is parsed defensively: a failure
-to find one field logs a warning and leaves it as None rather than aborting
-the whole product or run.
+Fetches search/product-detail pages via headless Chromium (Playwright) rather
+than a bare `requests` call — Amazon was flatly 503-ing plain HTTP requests
+even from a residential IP with full browser-like headers, so header spoofing
+alone wasn't enough (see scripts/browser_fetch.py). The rendered HTML is then
+parsed with BeautifulSoup exactly as before; only the fetch layer changed.
+Amazon's HTML is unstable and bot-defensive regardless, so every field is
+parsed defensively: a failure to find one field logs a warning and leaves it
+as None rather than aborting the whole product or run.
 """
 
 import json
 import logging
+import random
 import re
 import time
 from urllib.parse import quote_plus
 
-import requests
 from bs4 import BeautifulSoup
 
+from scripts.analyze_sentiment import analyze_amazon_sentiment
+from scripts.browser_fetch import RenderedPageFetcher
 from scripts.config import PRODUCTS
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
 
 BASE_URL = "https://www.amazon.com"
-HEADERS = {
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-        "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-    ),
-    "Accept-Language": "en-US,en;q=0.9",
-}
-REQUEST_TIMEOUT = 15
-REQUEST_DELAY_SECONDS = 2  # be polite between requests to the same host
+REQUEST_DELAY_RANGE_SECONDS = (2, 5)  # randomized, not fixed — a fixed interval is itself a bot signal
+MAX_REVIEW_TEXTS = 20
 
 
-def _get(url: str) -> BeautifulSoup | None:
-    try:
-        resp = requests.get(url, headers=HEADERS, timeout=REQUEST_TIMEOUT)
-        resp.raise_for_status()
-        return BeautifulSoup(resp.text, "html.parser")
-    except requests.RequestException as exc:
-        logger.warning("Request failed for %s: %s", url, exc)
+def _polite_delay() -> None:
+    time.sleep(random.uniform(*REQUEST_DELAY_RANGE_SECONDS))
+
+
+def _get(fetcher: RenderedPageFetcher, url: str, wait_selector: str | None = None) -> BeautifulSoup | None:
+    html = fetcher.fetch(url, wait_selector=wait_selector)
+    if html is None:
         return None
+    return BeautifulSoup(html, "html.parser")
 
 
-def _resolve_asin(search_keyword: str) -> str | None:
-    soup = _get(f"{BASE_URL}/s?k={quote_plus(search_keyword)}")
+def _resolve_asin(fetcher: RenderedPageFetcher, search_keyword: str) -> str | None:
+    soup = _get(
+        fetcher,
+        f"{BASE_URL}/s?k={quote_plus(search_keyword)}",
+        wait_selector="div[data-component-type='s-search-result']",
+    )
     if soup is None:
         return None
     result = soup.select_one("div[data-component-type='s-search-result'][data-asin]")
@@ -115,6 +118,59 @@ def _parse_est_monthly_sales(soup: BeautifulSoup) -> int | None:
         return None
 
 
+_REVIEW_PERMALINK_ID_RE = re.compile(r"/gp/customer-reviews/([A-Z0-9]+)")
+
+
+def _parse_review_texts(soup: BeautifulSoup) -> list[str]:
+    """Amazon's classic `data-hook="review"`/`"review-body"` cards are gone
+    from the current /dp/ page — replaced by an "AI review highlights"
+    snippet widget built on deploy-specific hashed CSS classes (e.g.
+    `__SAR2l0zNyyuZ`) with no stable selector to hook. The one thing that
+    *is* stable is each snippet's review permalink, `/gp/customer-reviews/
+    {review_id}` — Amazon's long-standing review-detail URL scheme. Walking
+    up from that anchor to the nearest ancestor whose text is wrapped in
+    literal quote marks recovers that review's (truncated, "...Read more")
+    snippet without depending on any class name at all.
+
+    (`/product-reviews/{asin}` was tried as a from-scratch fallback but
+    redirects anonymous requests to the Amazon sign-in page — not usable
+    without storing Amazon account credentials.)
+    """
+    try:
+        seen_ids = set()
+        texts = []
+        for a in soup.select("a[href^='/gp/customer-reviews/']"):
+            match = _REVIEW_PERMALINK_ID_RE.search(a.get("href", ""))
+            if not match or match.group(1) in seen_ids:
+                continue
+
+            snippet = None
+            node = a
+            for _ in range(8):  # bounded ancestor walk — bail out rather than risk an infinite/huge climb
+                node = node.parent
+                if node is None:
+                    break
+                text = node.get_text(" ", strip=True)
+                if text.startswith('"') and text.count('"') >= 2:
+                    snippet = text
+                    break
+            if not snippet:
+                continue
+
+            if snippet.endswith("Read more"):
+                snippet = snippet[: -len("Read more")].strip()
+            cleaned = snippet.strip('"').strip()
+            if cleaned:
+                seen_ids.add(match.group(1))
+                texts.append(cleaned)
+            if len(texts) >= MAX_REVIEW_TEXTS:
+                break
+        return texts
+    except AttributeError as exc:
+        logger.warning("Failed to parse review texts: %s", exc)
+        return []
+
+
 def _parse_category_and_bsr(soup: BeautifulSoup) -> tuple[str | None, int | None]:
     try:
         text = soup.get_text(" ", strip=True)
@@ -129,9 +185,9 @@ def _parse_category_and_bsr(soup: BeautifulSoup) -> tuple[str | None, int | None
         return None, None
 
 
-def _collect_product(product_cfg: dict) -> dict:
+def _collect_product(fetcher: RenderedPageFetcher, product_cfg: dict) -> dict:
     name = product_cfg["product"]
-    asin = product_cfg.get("asin") or _resolve_asin(product_cfg["search_keyword"])
+    asin = product_cfg.get("asin") or _resolve_asin(fetcher, product_cfg["search_keyword"])
 
     result = {
         "product": name,
@@ -144,14 +200,17 @@ def _collect_product(product_cfg: dict) -> dict:
         "in_stock": None,
         "price": None,
         "source": "scrape",
+        "sentiment_score": None,
+        "sentiment_summary": "",
+        "sentiment_confidence": "low",
     }
 
     if not asin:
         logger.warning("Skipping detail lookup for %r — no ASIN resolved", name)
         return result
 
-    time.sleep(REQUEST_DELAY_SECONDS)
-    soup = _get(f"{BASE_URL}/dp/{asin}")
+    _polite_delay()
+    soup = _get(fetcher, f"{BASE_URL}/dp/{asin}", wait_selector="#acrPopover, #availability")
     if soup is None:
         return result
 
@@ -161,31 +220,51 @@ def _collect_product(product_cfg: dict) -> dict:
     result["in_stock"] = _parse_in_stock(soup)
     result["est_monthly_sales"] = _parse_est_monthly_sales(soup)
     result["category"], result["bsr"] = _parse_category_and_bsr(soup)
+
+    # Review text is only used in-memory to feed sentiment analysis (PRD
+    # copyright consideration) — never stored in the returned dict. Parsed
+    # straight off the already-fetched /dp/ page's "top reviews" section
+    # (same data-hook="review" markup Amazon uses on /product-reviews/ too),
+    # rather than a separate /product-reviews/{asin} request — that URL
+    # 404s for some ASINs (observed for B0H2DPL69S) even though the reviews
+    # are right there on the product page.
+    review_texts = _parse_review_texts(soup)
+    if not review_texts:
+        logger.warning("No review text found on product page for %r (asin=%s)", name, asin)
+    sentiment = analyze_amazon_sentiment(review_texts)
+    result["sentiment_score"] = sentiment["sentiment_score"]
+    result["sentiment_summary"] = sentiment["sentiment_summary"]
+    result["sentiment_confidence"] = sentiment["confidence"]
+
     return result
 
 
 def collect_amazon_data() -> list[dict]:
     results = []
-    for product_cfg in PRODUCTS:
-        try:
-            results.append(_collect_product(product_cfg))
-        except Exception as exc:  # keep the whole run alive on unexpected failures
-            logger.warning("Unexpected failure collecting %r: %s", product_cfg["product"], exc)
-            results.append(
-                {
-                    "product": product_cfg["product"],
-                    "asin": product_cfg.get("asin"),
-                    "est_monthly_sales": None,
-                    "category": None,
-                    "bsr": None,
-                    "review_count": None,
-                    "rating": None,
-                    "in_stock": None,
-                    "price": None,
-                    "source": "scrape",
-                }
-            )
-        time.sleep(REQUEST_DELAY_SECONDS)
+    with RenderedPageFetcher(locale="en-US") as fetcher:
+        for product_cfg in PRODUCTS:
+            try:
+                results.append(_collect_product(fetcher, product_cfg))
+            except Exception as exc:  # keep the whole run alive on unexpected failures
+                logger.warning("Unexpected failure collecting %r: %s", product_cfg["product"], exc)
+                results.append(
+                    {
+                        "product": product_cfg["product"],
+                        "asin": product_cfg.get("asin"),
+                        "est_monthly_sales": None,
+                        "category": None,
+                        "bsr": None,
+                        "review_count": None,
+                        "rating": None,
+                        "in_stock": None,
+                        "price": None,
+                        "source": "scrape",
+                        "sentiment_score": None,
+                        "sentiment_summary": "",
+                        "sentiment_confidence": "low",
+                    }
+                )
+            _polite_delay()
     return results
 
 

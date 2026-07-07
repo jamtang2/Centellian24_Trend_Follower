@@ -143,9 +143,15 @@ def get_ulta_data() -> dict:
 
 def get_tiktok_data() -> dict:
     prompt = (
-        "TikTok에서 #Centellian24, #MadecaCream 해시태그의 게시물 수와 대표 영상 조회수를 조사해서 "
+        "TikTok에서 #Centellian24, #MadecaCream 해시태그와 관련된 게시물을 조사해줘 "
+        "(가능하면 최근 3개월 이내 게시물 위주로 확인해줘). "
+        "해시태그 페이지의 정확한 게시물 수를 직접 확인할 수 없다면, 검색으로 찾을 수 있는 개별 영상의 조회수·좋아요 수, "
+        "브랜드 공식 계정 게시물, 관련 기사·리뷰에서의 언급 등 간접적인 단서를 근거로 대략적인 범위라도 추정해줘 "
+        "(정확하지 않아도 되니 수십/수백/수천 단위의 대략적인 규모로 추정치를 제시해줘). "
+        "관련 검색 결과가 전혀 없어 추정할 근거조차 없는 경우에만 숫자 대신 null을 사용하고, "
+        "0은 '게시물이 실제로 없다는 것이 확인된 경우'에만 사용해줘 (단순히 못 찾았다고 0을 쓰지 마). "
         "아래 JSON 스키마로만 답해줘 (다른 설명 없이 JSON만): "
-        '{"hashtag": <string>, "post_count_est": <int>, "top_view_count_est": <int>, "sources": [<string>]}'
+        '{"hashtag": <string>, "post_count_est": <int|null>, "top_view_count_est": <int|null>, "sources": [<string>]}'
     )
     default_fields = {"hashtag": "#Centellian24", "post_count_est": None, "top_view_count_est": None, "sources": []}
     return _query_grounded_json(prompt, default_fields)
@@ -153,9 +159,15 @@ def get_tiktok_data() -> dict:
 
 def get_instagram_data() -> dict:
     prompt = (
-        "Instagram에서 #Centellian24 해시태그의 게시물 수를 조사해서 아래 JSON 스키마로만 답해줘 "
-        "(다른 설명 없이 JSON만): "
-        '{"hashtag": <string>, "post_count_est": <int>, "sources": [<string>]}'
+        "Instagram에서 #Centellian24 해시태그와 관련된 게시물을 조사해줘 "
+        "(가능하면 최근 3개월 이내 게시물 위주로 확인해줘). "
+        "해시태그 페이지의 정확한 게시물 수를 직접 확인할 수 없다면, 검색으로 찾을 수 있는 개별 게시물, "
+        "브랜드 공식 계정 게시물, 관련 기사·리뷰에서의 언급 등 간접적인 단서를 근거로 대략적인 범위라도 추정해줘 "
+        "(정확하지 않아도 되니 수십/수백/수천 단위의 대략적인 규모로 추정치를 제시해줘). "
+        "관련 검색 결과가 전혀 없어 추정할 근거조차 없는 경우에만 숫자 대신 null을 사용하고, "
+        "0은 '게시물이 실제로 없다는 것이 확인된 경우'에만 사용해줘 (단순히 못 찾았다고 0을 쓰지 마). "
+        "아래 JSON 스키마로만 답해줘 (다른 설명 없이 JSON만): "
+        '{"hashtag": <string>, "post_count_est": <int|null>, "sources": [<string>]}'
     )
     default_fields = {"hashtag": "#Centellian24", "post_count_est": None, "sources": []}
     return _query_grounded_json(prompt, default_fields)

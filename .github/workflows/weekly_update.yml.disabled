@@ -1,3 +1,9 @@
+# DISABLED (see PRD/Centellian24_US_Monitor_PRD_rev.md §1, §7): the GitHub Actions
+# runner's datacenter IP was repeatedly blocked by Amazon (503) and Google Trends
+# (429), so data collection moved to the user's local PC (Windows Task Scheduler,
+# see scripts/run_weekly.bat + setup_scheduler.ps1). GitHub Pages still deploys
+# docs/ automatically on push; this file is kept as .disabled (not deleted) so
+# the history/rationale stays in git. Rename back to .yml to re-enable.
 name: Weekly Centellian24 US Monitor Update
 
 on:
