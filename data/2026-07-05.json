@@ -18,7 +18,7 @@
     },
     {
       "product": "360도 샷 PDRN 리프팅 아이크림",
-      "asin": null,
+      "asin": "B0H2DPL69S",
       "est_monthly_sales": null,
       "category": null,
       "bsr": null,
@@ -33,7 +33,7 @@
     },
     {
       "product": "마데카 크림 액티브 리뉴 PDRN",
-      "asin": null,
+      "asin": "B0FS7QVSVC",
       "est_monthly_sales": null,
       "category": null,
       "bsr": null,
@@ -53,8 +53,8 @@
       "Madeca Cream": 44
     },
     "JP": {
-      "Centellian24": 24,
-      "Madeca Cream": 15
+      "Centellian24": null,
+      "Madeca Cream": null
     }
   },
   "qoo10_jp": [
@@ -74,12 +74,8 @@
     "sku_count": 1,
     "in_stock": true,
     "sources": [
-      "1",
-      "2",
-      "3",
-      "4",
-      "5",
-      "7"
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUBwaLRkx88mwUGYjD6ljdKx5GQH3ZyGNR_Tv48IIflmtjGteQJjzo8OCU1JjcrH7JWrWXdAgcxD80ePfd53jHklE_-yBQ2hmJN8_0WmxLGYb6votiYsuwlfewknXl6638yg==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1jt14GzDr-3JoK-z4IgQ6G0aOYxm4aAcRAwltSpgTS_I16yG9E708sxcl7uXSYJLQ_dU_O6YGGWNHFyc4iQ8KgIUX4zhoDMPmWcIZQ7Uhbtwlj7ziVQKjrDhZJ927T_rqS02PMLfRZz207_z8MtbEo3wyyEWL_jJ9vOIzXCJ67LfzHMdYtQ=="
     ],
     "source": "gemini_grounding",
     "confidence": "low"
@@ -88,35 +84,23 @@
     "hashtag": "#Centellian24",
     "post_count_est": 0,
     "top_view_count_est": 0,
-    "sources": [
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHn8M8sYYZQ4U_js4TRpF-rcjj_UA0ixnCO-bhMOsX0TH7xqN32tKAfb3GCjDEslaqYxSsiYAkE3TksuwQtJ2FBX4DHJBjsnQv-Tg7M8_Me-oOOeuRKpNj0zCCNQLuebhYwQbO1CcP4GgVJovc=",
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHIEG2Hi5sIPb1C_yMYX22vbMISq-6JRwbCvwM_gTHUMQLKeZtlNn4f6_x74dwVKD0N8MGM2vQZDsy4WBTcoRikZ5DwlDWFaVDkTSd6XWimd8axSxH9vwkurG_OTDaV0dOViZi6w9lNCem9NDS3vYcF22c=",
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFrvhpBYz45AiFk4k20mufvsAn5ZnbzKaGHPRm3XxHCpTInQydxFqXk5qXeKB1ZEnEWkERR_NHgEEnN9IzwSmmI0gGYC2DqEssJ2-wA8PR3lvM_zmOzHeB7zZ7qozonbiNZrqCyHOkcW-zBGVU5r-fVjMf6Jqvr2kxzwEetrGU6Dak=",
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_uaG5_jWpBhMosJp6u-K0nujTs1iQT9LF637Wd7Y9dkRtEoK3q32ee8X0xZqjz4hSorcbXR2Y80igncPJgVS_eZdeAsVY61R_mLmRWq-Vda5a7fosjo9p9EY3ezJQCvZFnB2QhPmeAz6D9ZMjy79CnaV4KgtgQaoxtGr-dh2julIOLV7pOR8-WcF3gp_jylX28RwtbDOMAm42MeqrFlCBDQNClyhwfV9kZHPNJWRRGNA=",
-      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFynxpY5eLLN1RGqVjCHcH7CqeS7rDw5TE9kZ5bVuUnJ2I9DW40wf7MQs3pg2EWEx0qSb8vrk3czBbHaCh_f6dVPtwlAMG_S11SYWjmP3cHN_mSv5s4J-V4ItTiLGwyGhgjCVgCBh4xSuhUazRYD0DKs6nmMxd1YLhwfoXGYA9onSU="
-    ],
+    "sources": [],
     "source": "gemini_grounding",
     "confidence": "low"
   },
   "instagram": {
     "hashtag": "#Centellian24",
-    "post_count_est": null,
-    "sources": [],
+    "post_count_est": -1,
+    "sources": [
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1lcBFEjJP4j4FJjmYoX_tEN3wBZvCLkMtY9C4_9-Y2i0QlOBxQSy7RXX6ZTfaH9ux71VL3oayitKRC_vaVf9daEwkoXFhgoOeoEoBjrFP4WDlMilbggSFJ2CN0yjD4Bj2FywU5ezP1ngvelf0IYxtYCgKllf03UiFVEcXGX6hsEdp3Z_F3bJL1DGt81qn0Gn6b9ynn-XTr-oBSy7hYd9B"
+    ],
     "source": "gemini_grounding",
     "confidence": "low"
   },
-  "ai_summary": "현재 제공된 데이터에 따르면, 아마존 미국/일본 및 Qoo10 일본에서는 센텔리안24 제품의 추정 판매량, BSR, 리뷰 수 등 주요 지표가 확인되지 않습니다. Google Trends상으로는 미국에서 'Madeca Cream'의 검색 관심도가 'Centellian24'보다 높고, 일본에서는 반대로 'Centellian24'의 검색 관심도가 더 높은 것으로 나타납니다. Ulta에서는 1개 SKU가 18개 리뷰에서 4.8점의 평점을 받았으나, 해당 데이터의 신뢰도는 낮습니다. 틱톡의 #Centellian24 해시태그 관련 추정 게시물 및 최고 조회수는 0으로 나타나며, 인스타그램의 추정 게시물 수도 현재 확인되지 않으며, 이 두 소셜 미디어 지표 모두 신뢰도가 낮습니다.",
+  "ai_summary": "센텔리안24는 이번 주 아마존 미국/일본 시장에서 제품별 추정 판매량, BSR, 리뷰 등 주요 지표 데이터가 현재 확인되지 않습니다. Google Trends 미국 데이터에 따르면 'Madeca Cream'은 검색량 44를 기록하며 'Centellian24'(검색량 13)보다 높은 관심을 보였으나, 일본에서는 관련 검색량이 확인되지 않습니다. Ulta에서는 1개 SKU가 18개의 리뷰와 4.8점의 평점으로 재고가 있는 상태이지만, 이 데이터의 신뢰도는 낮게 평가됩니다. TikTok 및 Instagram의 추정 해시태그 게시물 수는 미미하거나 확인되지 않는 수준이며, 이 추정치들의 신뢰도 또한 낮습니다.",
   "sources": [
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "7",
-    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHn8M8sYYZQ4U_js4TRpF-rcjj_UA0ixnCO-bhMOsX0TH7xqN32tKAfb3GCjDEslaqYxSsiYAkE3TksuwQtJ2FBX4DHJBjsnQv-Tg7M8_Me-oOOeuRKpNj0zCCNQLuebhYwQbO1CcP4GgVJovc=",
-    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHIEG2Hi5sIPb1C_yMYX22vbMISq-6JRwbCvwM_gTHUMQLKeZtlNn4f6_x74dwVKD0N8MGM2vQZDsy4WBTcoRikZ5DwlDWFaVDkTSd6XWimd8axSxH9vwkurG_OTDaV0dOViZi6w9lNCem9NDS3vYcF22c=",
-    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFrvhpBYz45AiFk4k20mufvsAn5ZnbzKaGHPRm3XxHCpTInQydxFqXk5qXeKB1ZEnEWkERR_NHgEEnN9IzwSmmI0gGYC2DqEssJ2-wA8PR3lvM_zmOzHeB7zZ7qozonbiNZrqCyHOkcW-zBGVU5r-fVjMf6Jqvr2kxzwEetrGU6Dak=",
-    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG_uaG5_jWpBhMosJp6u-K0nujTs1iQT9LF637Wd7Y9dkRtEoK3q32ee8X0xZqjz4hSorcbXR2Y80igncPJgVS_eZdeAsVY61R_mLmRWq-Vda5a7fosjo9p9EY3ezJQCvZFnB2QhPmeAz6D9ZMjy79CnaV4KgtgQaoxtGr-dh2julIOLV7pOR8-WcF3gp_jylX28RwtbDOMAm42MeqrFlCBDQNClyhwfV9kZHPNJWRRGNA=",
-    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFynxpY5eLLN1RGqVjCHcH7CqeS7rDw5TE9kZ5bVuUnJ2I9DW40wf7MQs3pg2EWEx0qSb8vrk3czBbHaCh_f6dVPtwlAMG_S11SYWjmP3cHN_mSv5s4J-V4ItTiLGwyGhgjCVgCBh4xSuhUazRYD0DKs6nmMxd1YLhwfoXGYA9onSU="
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGUBwaLRkx88mwUGYjD6ljdKx5GQH3ZyGNR_Tv48IIflmtjGteQJjzo8OCU1JjcrH7JWrWXdAgcxD80ePfd53jHklE_-yBQ2hmJN8_0WmxLGYb6votiYsuwlfewknXl6638yg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1jt14GzDr-3JoK-z4IgQ6G0aOYxm4aAcRAwltSpgTS_I16yG9E708sxcl7uXSYJLQ_dU_O6YGGWNHFyc4iQ8KgIUX4zhoDMPmWcIZQ7Uhbtwlj7ziVQKjrDhZJ927T_rqS02PMLfRZz207_z8MtbEo3wyyEWL_jJ9vOIzXCJ67LfzHMdYtQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH1lcBFEjJP4j4FJjmYoX_tEN3wBZvCLkMtY9C4_9-Y2i0QlOBxQSy7RXX6ZTfaH9ux71VL3oayitKRC_vaVf9daEwkoXFhgoOeoEoBjrFP4WDlMilbggSFJ2CN0yjD4Bj2FywU5ezP1ngvelf0IYxtYCgKllf03UiFVEcXGX6hsEdp3Z_F3bJL1DGt81qn0Gn6b9ynn-XTr-oBSy7hYd9B"
   ]
 }
