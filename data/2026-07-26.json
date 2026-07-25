@@ -1,0 +1,159 @@
+{
+  "week": "2026-07-26",
+  "amazon": [
+    {
+      "product": "마데카 크림 타임 리버스",
+      "asin": "B0DFY92NDB",
+      "est_monthly_sales": null,
+      "category": "Beauty & Personal Care",
+      "bsr": 468,
+      "review_count": 5535,
+      "rating": 4.6,
+      "in_stock": true,
+      "price": 32288.0,
+      "source": "scrape",
+      "sentiment_score": null,
+      "sentiment_summary": "",
+      "sentiment_confidence": "low"
+    },
+    {
+      "product": "360도 샷 PDRN 리프팅 아이크림",
+      "asin": "B0DSNLM3T1",
+      "est_monthly_sales": 700,
+      "category": "Beauty & Personal Care",
+      "bsr": 41851,
+      "review_count": 117,
+      "rating": 4.5,
+      "in_stock": true,
+      "price": 44394.0,
+      "source": "scrape",
+      "sentiment_score": null,
+      "sentiment_summary": "",
+      "sentiment_confidence": "low"
+    },
+    {
+      "product": "마데카 크림 액티브 리뉴 PDRN",
+      "asin": "B0G9D2GFBK",
+      "est_monthly_sales": null,
+      "category": "Beauty & Personal Care",
+      "bsr": 192793,
+      "review_count": 13,
+      "rating": 4.2,
+      "in_stock": true,
+      "price": 21890.0,
+      "source": "scrape",
+      "sentiment_score": null,
+      "sentiment_summary": "",
+      "sentiment_confidence": "low"
+    }
+  ],
+  "google_trends": {
+    "US": {
+      "Centellian24": 5,
+      "Madeca Cream": 40
+    },
+    "JP": {
+      "Centellian24": 16,
+      "Madeca Cream": 19
+    }
+  },
+  "qoo10_jp": [
+    {
+      "product": "마데카 크림",
+      "sales_badge": null,
+      "category_rank": null,
+      "review_count": 1172,
+      "rating": 4.7,
+      "in_stock": true,
+      "source": "scrape"
+    }
+  ],
+  "ulta": {
+    "review_count": 18,
+    "rating": 4.8,
+    "sku_count": 14,
+    "in_stock": true,
+    "sources": [
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQPhMHC5DYqAU6cCDMCDBjPzxMsoSO3Tt2ysQWYmuSbVEiN8H7xTm1-KARclZpWr9jszwcfaVtc8S_lxCdDzF10lt_uQy-SdB_bgzK4yjiD_qxvYKaCdBZ-GdfDd1oo7dOcsdmHWXe0oF1KOspgxGpSo_k84bcZ677ynEOev2X90Vk",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5GLiPkIMaDirdGMxmcWtb7pF3tKnrww0HCfOwiqWYdiOIDgBS81uLaUVNeRBcq5otHp9pDOQsUKM1JbgxkO9Ma7fHOzAL92Q7ktF_44kltoZUeok7CUy248gBxshmH2zu4xC9T-RJwKuQWuBZ-G-s3wgxtKM=",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2ko81yzHZ09KdfCKQNkAG6EwJTW_qdBrTNIMbjxYwONe4u24BIB_V2pjsQ70GJxh1JmkrTjxGcgwW-THwxwF6kPbHkdzzhOOwRuTzfjQFetKs2aqYkgvkoJ8DDZyaSMB5yUUEG3qA2f66bkO8S8FxKuKhTCcvdsTjSZIEiDegt7Cgt4q1mw==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6dRR1t_eE1Q5mlAAapBnDVRZRi0yWZyNRo3Lirjyd_3A8ZCvP7W6PWlOv13jE8xAp9c7Y81_Q8gU_zYHC48iYDV1y07c1U1EHh9T042SOR4GsK2wnZkkTmo7AWir_kB0nnlj4aaGn390jvRSi93DrgFPt5g==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkXm86D9GxtpNhIsDuxHzLVX_qBUghUcXq7sPSCJno1afs0HoyvsLsgpWtDMqgLAq1-Xe4__4x5OJCbs3sJGdOM470CAClYiHxXVHY335wIwkoIgWk1V79vgx1rIGvR7DQTVKKiIrje-K3ZwQYt-ZnboIf",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdKb4qKb1JhYX3WdR-V4okgYhrVmq0MuMCG0h8cM3CFPF8e0K7Gu0hD1kifWCPWLVZiAsJOCUWKZ7c2VJaYUIfHA-cjKd5sE9A67OPh8l5Ia1541kBfE2WJGdiL1o99KOPlS7KT2-rgMyhumvF29TEWHbs"
+    ],
+    "source": "gemini_grounding",
+    "confidence": "low"
+  },
+  "tiktok": {
+    "hashtag": "#Centellian24",
+    "post_count_est": 100000,
+    "top_view_count_est": 1000000,
+    "sources": [
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFqQ3w1fZJai3OG39j-9PxEwet4czbWkIk-b-l2hSQzSYerKdkDPglplOAuWuGz5GmYh_P40dwpO0skflu5r0D-Ar0d-vr-cjQ1wOmht2jesERXeAAqGvUWhDyMZwI8GmCUZHxmPLIhQmsDVZ0T0_hMQBqrquYYiuGNGyOiPxapHmFbChYDwH5r9IbHonKDAM7vg==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8ir2utKiBEtvAgQbTUhtQ7FkZNArvWjruoPeJHO61xQy6MU7Ssa_f4zOkkq9KENE8ig5Bq_huoAq3x2zHoyq1Yi-cc1Ze_u9X61S4YVWIiU1WmjR-yiuSKzAl516GPSnAzQ==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAkx_H8ZKkhGNJFJgFzlZZDIiROsemsUn78IocMaiwtGBYl81WlTQhvEzau6FHYjFoL2LQSYH-NTsLko1yw1HD39WK6ISyJ3pTbdJuyJoge6opDJuvxlOfXHTC4Y7x7u2XGxf2IafSuRCc6-GxUg==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFi-6eOqYUMWK2qrZPKfQIIYH8aXiiIgLFJbV2qKnyzDRGSDWwPCtKlK4FkuFVA-11DpOKYz_oyhnHL2PnCpB9aiBo5XjXu-BgUemMg3JIskjjjzd4swi5FNrPKwWdQvGACI0PWnWyYPcGru1uHm9a16ddnNA_gJ4NYtiSmmWr1Xb-Ya-bT6WyrzKFHlF1gXgL5VpWN-wHI7ZVdE3oPHX1LsAxTfo5nfjpF8LKVxhNo",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbjWw5C960U4jC8WjM94dbUUu8QE94JV7L9OJrZ5B_-1dsTbelg1vCmgW6YRqrILrgF4sCKFe4j8LgT3NvBSBryxVwa6yqp_gJJ-3_CYMmbzoF9Npbw0ZiVIu8t7xovsnqlv-PgjWXlMNMtANMbvvehHRdLLjQ9g7f2vP6vRCCssH6",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEIL0ZLqsNKT3W_GmIAyLf4MN8UwwomLZyV_FZAm4BtGKvxlXg_rPQeRhs1BtqgiZ838whxifFVlc2HBCeV3xxFaq8mwGvW9G1K6lN5mZMTyuiw2nmXRF26rSSTegkZiGGN960Q3A4z2LZ4uTrWssBBhYvO7AnG2wapENDqaS3R_AI6WUfDRf_RgQJquHA5Fq2OiznauIEDoMAU4K-KgA==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6XixMe2L9bWEKyB4NhxCqqe_Zjz2-5s2jT29G1Uzg4UT7ugS8VqjjeXHAkXZWcJByjtucyd0pZXbiZxMYh_It8nbKEy51jpY4RnUHF2jjIaQB9w-bBbhfdRrYAY0xxujm0RJjj4qy20Nr9s2L1C-PJVJj4o3KbuN3qxiG_jUoGnsLXr4Ikiye8O7_QbnrRAmSrtBXW_lewu5mVBNpc_yAWamvu-0=",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF86LVoxRFwglrfL8eCaWjKbXkPYpDbDyPOg4hDE3tPEPjWQzRpqVanCXtzsNw384E4Gyrufg14fzsWtIXxhZL_99eYNEh1w5sE266-X0UzqRMaPr7dNOKXdamiqJ-BqS43NxAxOqMD1AmAqsy4d2XQ5jbL6ZZG9h_BXw_paw==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3prm0v7WkKqf2WkgdVmlM1Ue4E5oM4E5AARgSXHQJCaG8u0pfIDYRvD5oKgFzdn09hhAbfM7un8gzYL-RItd1Y0ORaiqan9YQu6f97tn8wyb6wb4iwMsXQYM6S99N3wWjTGYB02k=",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEysK0NZF8GtVYxcXNjJRrJCbqQegUKbTq1vJv6CTALh1p5lU95D_PDIngvXNXEoW418DT2XEte_FtFQE5lrKizdb35d5NEram_49ynsZU-Q7pUnuSrIjIW7VlI8eoFdflEHIA0bg=="
+    ],
+    "source": "gemini_grounding",
+    "confidence": "low"
+  },
+  "instagram": {
+    "hashtag": "#Centellian24",
+    "post_count_est": 50000,
+    "sources": [
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbM3_bCCoZyGWWhDG7eiKxYcWndjQClPmI4OF49zsW5e5rlKOTCZTQO22VQB-GPqCobfmK4avhNu9AB5k7NU9d4XD0UsqrtDKSsw29-YtzC1Kk17gqnVCCPyrEUVMj6lPM4aAjZypwsFTaYBiPLW8jEO9wQSMhWzGa_MvF7GSINY9sRDgblocqDbCrKwg4SuyDHOQu01L0P9fv-4VaoR_oXnA4ldV6wEHQ",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6gKCqsEAvDLNhahQ55lE0PFYWqLxW78G6SK7D-OH1a4t4ERre4PMSiRE5MEKOO1sx0kQSrMRZnsPXYlJwNMd1iMOxVX3wv4DgS56WZWId2zmfYdKxsUle4cwhKZBbdD5JqQgoTqO8",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzl43J6P9TnFbloWzjxadrFdsaUXrcnRYXcFf3qsW4fdGJ7cHdcMptTFhv7B1Da7HJCgR1r3s5uc93_rn2noiYzJRmz-gINvRqIJ4MRzOYpB2PtsPiSvpTQQ==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHidK-AatsWmf4Yb9B9AjCwm_eDhkgufcFlr3yu5XjXUrz_NQbFUk5F1GwMQ9DxMcbrk88oa62QOxMFA3TZLTM5TIZKSyPxZee0_28iQBOpfYkyRFE8q4Opmjtu3tr2pW19dCDyyC73e-mRsu9Sb2DNrULJHMfYkRoGzAS566beZBpteEMDMVVVsOfJOs3sdEt7cmevtwdwf1bq42pvPf7Gz4r27GGEOZ4KNOyRsS-E42ej_A==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGEmH3-igmTSy07ieb4eYJ6SOe8i80yt_pwFimpezqAymp9AEUK7dromHoVDAIFshUvwlC22FIoG7LGaDLvJAtCFZPpqZpgyU8VwB6VYCWiPsnu7w==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrYU9aP2-xwpS0-_TWFRI8VGXF6aTcTc0Zx6IAVOvGRoU-6gwP4fyn_bscs2zu5-Ca5reMVRaq8cVqtW8u3d5Q70vjv5ZmHqAzEqaKV_a317AX6DDi3nxzmA==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG11Osh8vL1YW5l1k7Xd7Jpl32fybVgvcbADfQMYB8uQNQr31F_myEDSRWmpdgM2RFRl2DHzmJmFuajtlvhTxTzLg59XiSWtyW-AOyVahtubQqfWNi4ngv13xmYr5h9nG_qI8CLUzGFHslsuTvC",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0x4Ifw_QVK15avPaqqzgwFezmoCenVKN6Zaj2C-5M-nq9p9oy7vAs5ylbo3crKs6OMMETpLHEv858LFfrX6mpok7mI9_AWE1gUgO738JE9qxc9v0=",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFbzws3yBgKMrrXKEVyroPobfg_92Dv4L5Sq0J7Q8qcdVXPSFfsNqHIPy-PPBYX-tXUP2n37hk0cIKuc1Bs8QCtptk2i9N-R7iREqMO-_eqGgwkZg==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaa8XJD_FwXmTG3uTgyp-G5S91zBdS0TV5XS5VZseuCtTrc7Ups6EHxTaaDju7XZ3C9QJloQYzTKIOxmyoUNEPovTnqiD7g0FBHPzom4xlTLmfyxUL2rwikISffpWIBewvVHWbUFm8xw0BHAO3",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCAz9kyu5HOIiBnIGpznG0NFM6OHozFTIjNuBC15Ekq-PvJmyNdPnGhtnC_r5D6l4fzTwfYuKIbmJ7OZpjKMUrrlvJo5QjRYwMB6t1IsKqjdarx4vS7ELPP3AdnbHUbUrkymoz2Vm6OWz7g-LThtIcwsoLzb5y6w==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLaw58fNjAXkmAnGKbefeR9DnpaF4I_ONEmrhw-w3ekoplyKZVbOC_A2dGgVv2qg_8x5b5TEALTAs9XMZPwnyz0O12EvkhTfMLWImgQPz12MEElIBpcM5iiiwehkk7MrMuZq5jMs8FSQ==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFf4xIFzeKURLNQCQkYFinq3IeTKkDRuvxpGKeoaIGWANIu1PTWrTGBio-GJqi7HcxpSOq9PovJwik60UMTNda29zlo9tMWB-tzgbcAWpzu67ek3M6BEVvoxH9jvd4eAQBRY0m4sMKFswYIu6ExNX7grRTy8k69Q-A="
+    ],
+    "source": "gemini_grounding",
+    "confidence": "low"
+  },
+  "ai_summary": "이번 주 센텔리안24의 미국 아마존 지표에 따르면, '마데카 크림 타임 리버스'는 BSR이 소폭 개선되고 리뷰 수가 5,535개로 증가했으며, '360도 샷 PDRN 리프팅 아이크림'은 추정 월 판매량 700개를 기록하며 리뷰가 소폭 늘었습니다. 다만, '마데카 크림 액티브 리뉴 PDRN'은 ASIN이 변경되어 새로운 품목으로 추정 판매량 및 BSR 지표가 재측정된 것으로 보입니다.\n\nGoogle 트렌드에서 미국 내 'Centellian24'와 'Madeca Cream' 검색량은 소폭 감소했으나, 일본에서는 두 키워드 모두 검색량이 증가했습니다. Ulta에서는 SKU가 1개 증가했으며, Qoo10 JP에서는 큰 변화가 없었습니다.\n\n소셜 미디어에서는 TikTok의 추정 최다 조회수는 크게 감소했지만, Instagram 해시태그 추정 게시물 수는 1,000개에서 50,000개로 대폭 늘어 소셜 채널별 지표 변화가 상이하게 나타났습니다.",
+  "sources": [
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHQPhMHC5DYqAU6cCDMCDBjPzxMsoSO3Tt2ysQWYmuSbVEiN8H7xTm1-KARclZpWr9jszwcfaVtc8S_lxCdDzF10lt_uQy-SdB_bgzK4yjiD_qxvYKaCdBZ-GdfDd1oo7dOcsdmHWXe0oF1KOspgxGpSo_k84bcZ677ynEOev2X90Vk",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH5GLiPkIMaDirdGMxmcWtb7pF3tKnrww0HCfOwiqWYdiOIDgBS81uLaUVNeRBcq5otHp9pDOQsUKM1JbgxkO9Ma7fHOzAL92Q7ktF_44kltoZUeok7CUy248gBxshmH2zu4xC9T-RJwKuQWuBZ-G-s3wgxtKM=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE2ko81yzHZ09KdfCKQNkAG6EwJTW_qdBrTNIMbjxYwONe4u24BIB_V2pjsQ70GJxh1JmkrTjxGcgwW-THwxwF6kPbHkdzzhOOwRuTzfjQFetKs2aqYkgvkoJ8DDZyaSMB5yUUEG3qA2f66bkO8S8FxKuKhTCcvdsTjSZIEiDegt7Cgt4q1mw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6dRR1t_eE1Q5mlAAapBnDVRZRi0yWZyNRo3Lirjyd_3A8ZCvP7W6PWlOv13jE8xAp9c7Y81_Q8gU_zYHC48iYDV1y07c1U1EHh9T042SOR4GsK2wnZkkTmo7AWir_kB0nnlj4aaGn390jvRSi93DrgFPt5g==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEkXm86D9GxtpNhIsDuxHzLVX_qBUghUcXq7sPSCJno1afs0HoyvsLsgpWtDMqgLAq1-Xe4__4x5OJCbs3sJGdOM470CAClYiHxXVHY335wIwkoIgWk1V79vgx1rIGvR7DQTVKKiIrje-K3ZwQYt-ZnboIf",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHdKb4qKb1JhYX3WdR-V4okgYhrVmq0MuMCG0h8cM3CFPF8e0K7Gu0hD1kifWCPWLVZiAsJOCUWKZ7c2VJaYUIfHA-cjKd5sE9A67OPh8l5Ia1541kBfE2WJGdiL1o99KOPlS7KT2-rgMyhumvF29TEWHbs",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFqQ3w1fZJai3OG39j-9PxEwet4czbWkIk-b-l2hSQzSYerKdkDPglplOAuWuGz5GmYh_P40dwpO0skflu5r0D-Ar0d-vr-cjQ1wOmht2jesERXeAAqGvUWhDyMZwI8GmCUZHxmPLIhQmsDVZ0T0_hMQBqrquYYiuGNGyOiPxapHmFbChYDwH5r9IbHonKDAM7vg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH8ir2utKiBEtvAgQbTUhtQ7FkZNArvWjruoPeJHO61xQy6MU7Ssa_f4zOkkq9KENE8ig5Bq_huoAq3x2zHoyq1Yi-cc1Ze_u9X61S4YVWIiU1WmjR-yiuSKzAl516GPSnAzQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFAkx_H8ZKkhGNJFJgFzlZZDIiROsemsUn78IocMaiwtGBYl81WlTQhvEzau6FHYjFoL2LQSYH-NTsLko1yw1HD39WK6ISyJ3pTbdJuyJoge6opDJuvxlOfXHTC4Y7x7u2XGxf2IafSuRCc6-GxUg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFi-6eOqYUMWK2qrZPKfQIIYH8aXiiIgLFJbV2qKnyzDRGSDWwPCtKlK4FkuFVA-11DpOKYz_oyhnHL2PnCpB9aiBo5XjXu-BgUemMg3JIskjjjzd4swi5FNrPKwWdQvGACI0PWnWyYPcGru1uHm9a16ddnNA_gJ4NYtiSmmWr1Xb-Ya-bT6WyrzKFHlF1gXgL5VpWN-wHI7ZVdE3oPHX1LsAxTfo5nfjpF8LKVxhNo",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGbjWw5C960U4jC8WjM94dbUUu8QE94JV7L9OJrZ5B_-1dsTbelg1vCmgW6YRqrILrgF4sCKFe4j8LgT3NvBSBryxVwa6yqp_gJJ-3_CYMmbzoF9Npbw0ZiVIu8t7xovsnqlv-PgjWXlMNMtANMbvvehHRdLLjQ9g7f2vP6vRCCssH6",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEIL0ZLqsNKT3W_GmIAyLf4MN8UwwomLZyV_FZAm4BtGKvxlXg_rPQeRhs1BtqgiZ838whxifFVlc2HBCeV3xxFaq8mwGvW9G1K6lN5mZMTyuiw2nmXRF26rSSTegkZiGGN960Q3A4z2LZ4uTrWssBBhYvO7AnG2wapENDqaS3R_AI6WUfDRf_RgQJquHA5Fq2OiznauIEDoMAU4K-KgA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH6XixMe2L9bWEKyB4NhxCqqe_Zjz2-5s2jT29G1Uzg4UT7ugS8VqjjeXHAkXZWcJByjtucyd0pZXbiZxMYh_It8nbKEy51jpY4RnUHF2jjIaQB9w-bBbhfdRrYAY0xxujm0RJjj4qy20Nr9s2L1C-PJVJj4o3KbuN3qxiG_jUoGnsLXr4Ikiye8O7_QbnrRAmSrtBXW_lewu5mVBNpc_yAWamvu-0=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF86LVoxRFwglrfL8eCaWjKbXkPYpDbDyPOg4hDE3tPEPjWQzRpqVanCXtzsNw384E4Gyrufg14fzsWtIXxhZL_99eYNEh1w5sE266-X0UzqRMaPr7dNOKXdamiqJ-BqS43NxAxOqMD1AmAqsy4d2XQ5jbL6ZZG9h_BXw_paw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH3prm0v7WkKqf2WkgdVmlM1Ue4E5oM4E5AARgSXHQJCaG8u0pfIDYRvD5oKgFzdn09hhAbfM7un8gzYL-RItd1Y0ORaiqan9YQu6f97tn8wyb6wb4iwMsXQYM6S99N3wWjTGYB02k=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEysK0NZF8GtVYxcXNjJRrJCbqQegUKbTq1vJv6CTALh1p5lU95D_PDIngvXNXEoW418DT2XEte_FtFQE5lrKizdb35d5NEram_49ynsZU-Q7pUnuSrIjIW7VlI8eoFdflEHIA0bg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbM3_bCCoZyGWWhDG7eiKxYcWndjQClPmI4OF49zsW5e5rlKOTCZTQO22VQB-GPqCobfmK4avhNu9AB5k7NU9d4XD0UsqrtDKSsw29-YtzC1Kk17gqnVCCPyrEUVMj6lPM4aAjZypwsFTaYBiPLW8jEO9wQSMhWzGa_MvF7GSINY9sRDgblocqDbCrKwg4SuyDHOQu01L0P9fv-4VaoR_oXnA4ldV6wEHQ",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6gKCqsEAvDLNhahQ55lE0PFYWqLxW78G6SK7D-OH1a4t4ERre4PMSiRE5MEKOO1sx0kQSrMRZnsPXYlJwNMd1iMOxVX3wv4DgS56WZWId2zmfYdKxsUle4cwhKZBbdD5JqQgoTqO8",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzl43J6P9TnFbloWzjxadrFdsaUXrcnRYXcFf3qsW4fdGJ7cHdcMptTFhv7B1Da7HJCgR1r3s5uc93_rn2noiYzJRmz-gINvRqIJ4MRzOYpB2PtsPiSvpTQQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHidK-AatsWmf4Yb9B9AjCwm_eDhkgufcFlr3yu5XjXUrz_NQbFUk5F1GwMQ9DxMcbrk88oa62QOxMFA3TZLTM5TIZKSyPxZee0_28iQBOpfYkyRFE8q4Opmjtu3tr2pW19dCDyyC73e-mRsu9Sb2DNrULJHMfYkRoGzAS566beZBpteEMDMVVVsOfJOs3sdEt7cmevtwdwf1bq42pvPf7Gz4r27GGEOZ4KNOyRsS-E42ej_A==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGEmH3-igmTSy07ieb4eYJ6SOe8i80yt_pwFimpezqAymp9AEUK7dromHoVDAIFshUvwlC22FIoG7LGaDLvJAtCFZPpqZpgyU8VwB6VYCWiPsnu7w==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHrYU9aP2-xwpS0-_TWFRI8VGXF6aTcTc0Zx6IAVOvGRoU-6gwP4fyn_bscs2zu5-Ca5reMVRaq8cVqtW8u3d5Q70vjv5ZmHqAzEqaKV_a317AX6DDi3nxzmA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG11Osh8vL1YW5l1k7Xd7Jpl32fybVgvcbADfQMYB8uQNQr31F_myEDSRWmpdgM2RFRl2DHzmJmFuajtlvhTxTzLg59XiSWtyW-AOyVahtubQqfWNi4ngv13xmYr5h9nG_qI8CLUzGFHslsuTvC",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQG0x4Ifw_QVK15avPaqqzgwFezmoCenVKN6Zaj2C-5M-nq9p9oy7vAs5ylbo3crKs6OMMETpLHEv858LFfrX6mpok7mI9_AWE1gUgO738JE9qxc9v0=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFbzws3yBgKMrrXKEVyroPobfg_92Dv4L5Sq0J7Q8qcdVXPSFfsNqHIPy-PPBYX-tXUP2n37hk0cIKuc1Bs8QCtptk2i9N-R7iREqMO-_eqGgwkZg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaa8XJD_FwXmTG3uTgyp-G5S91zBdS0TV5XS5VZseuCtTrc7Ups6EHxTaaDju7XZ3C9QJloQYzTKIOxmyoUNEPovTnqiD7g0FBHPzom4xlTLmfyxUL2rwikISffpWIBewvVHWbUFm8xw0BHAO3",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHCAz9kyu5HOIiBnIGpznG0NFM6OHozFTIjNuBC15Ekq-PvJmyNdPnGhtnC_r5D6l4fzTwfYuKIbmJ7OZpjKMUrrlvJo5QjRYwMB6t1IsKqjdarx4vS7ELPP3AdnbHUbUrkymoz2Vm6OWz7g-LThtIcwsoLzb5y6w==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLaw58fNjAXkmAnGKbefeR9DnpaF4I_ONEmrhw-w3ekoplyKZVbOC_A2dGgVv2qg_8x5b5TEALTAs9XMZPwnyz0O12EvkhTfMLWImgQPz12MEElIBpcM5iiiwehkk7MrMuZq5jMs8FSQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFf4xIFzeKURLNQCQkYFinq3IeTKkDRuvxpGKeoaIGWANIu1PTWrTGBio-GJqi7HcxpSOq9PovJwik60UMTNda29zlo9tMWB-tzgbcAWpzu67ek3M6BEVvoxH9jvd4eAQBRY0m4sMKFswYIu6ExNX7grRTy8k69Q-A="
+  ]
+}
