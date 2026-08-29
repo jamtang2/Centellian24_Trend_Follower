@@ -1,0 +1,145 @@
+{
+  "week": "2026-08-30",
+  "amazon": [
+    {
+      "product": "마데카 크림 타임 리버스",
+      "asin": "B0DFY92NDB",
+      "est_monthly_sales": null,
+      "category": "Beauty & Personal Care",
+      "bsr": 123,
+      "review_count": 6415,
+      "rating": 4.5,
+      "in_stock": true,
+      "price": 30640.0,
+      "source": "scrape",
+      "sentiment_score": null,
+      "sentiment_summary": "",
+      "sentiment_confidence": "low"
+    },
+    {
+      "product": "360도 샷 PDRN 리프팅 아이크림",
+      "asin": "B0G48T5CM2",
+      "est_monthly_sales": null,
+      "category": "Beauty & Personal Care",
+      "bsr": 747,
+      "review_count": 881,
+      "rating": 4.5,
+      "in_stock": null,
+      "price": 12569.0,
+      "source": "scrape",
+      "sentiment_score": null,
+      "sentiment_summary": "",
+      "sentiment_confidence": "low"
+    },
+    {
+      "product": "마데카 크림 액티브 리뉴 PDRN",
+      "asin": "B0FS7QVSVC",
+      "est_monthly_sales": null,
+      "category": "Beauty & Personal Care",
+      "bsr": 2737,
+      "review_count": 1239,
+      "rating": 4.6,
+      "in_stock": null,
+      "price": 30336.0,
+      "source": "scrape",
+      "sentiment_score": null,
+      "sentiment_summary": "",
+      "sentiment_confidence": "low"
+    }
+  ],
+  "google_trends": {
+    "US": {
+      "Centellian24": 10,
+      "Madeca Cream": 57
+    },
+    "JP": {
+      "Centellian24": 15,
+      "Madeca Cream": 27
+    }
+  },
+  "qoo10_jp": [
+    {
+      "product": "마데카 크림",
+      "sales_badge": null,
+      "category_rank": null,
+      "review_count": 1172,
+      "rating": 4.7,
+      "in_stock": true,
+      "source": "scrape"
+    }
+  ],
+  "ulta": {
+    "review_count": 18,
+    "rating": 4.8,
+    "sku_count": 24,
+    "in_stock": true,
+    "sources": [
+      "1",
+      "3",
+      "5",
+      "7"
+    ],
+    "source": "gemini_grounding",
+    "confidence": "low"
+  },
+  "tiktok": {
+    "hashtag": "#Centellian24",
+    "post_count_est": 10000,
+    "top_view_count_est": 30000000,
+    "sources": [
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGumNPY1pUn5t_JJZaDJECh2J1kIMluDuC3GTEfzNgAbGPO0EUcak3QnwlFFgV9dMVWYh_II1zg9NM8ksybKAUD1p7dDYNiGt-Mxh_-HYokGtj-2eQnNQFqIOjSRIy5k-QCD7dt4nQN19sAQzE=",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGSmppaPk0ABK4rfDFKLXlY5TkNrJ42AIMjF5BVp5zYZlgL-Y0IfgfZDlcJEXKK54CNhhdlDB01BzYu5eknq2-WhqZ3x7XLwjfWRwtEJtzp1dSxfQZfe12I9F4T9WGOA7y_0c5rBtBzj7u9vrihJfgSTkA=",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvMf9iXqdkIScVZFhYtyXfy7y6G068sSslFx_N0Ap62dabSQ6Qa8gPDavw-YC9w-XrX4W-yjOe32HTaU6-JxdJ2j2ViJWaXPxQEnjsm7bxq-bJhtmncH3DWtIM_0vBoS-1aA==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFOqgaZvMaqrz04sdzqaejku7UEDSLNWdFTsjV0r_AuoXZLkNYSiuvn_2S1vBdCdaULN280XXrtksdkkGT8n2y6P7KkjrZy20kT94tVpvWWRZrq0rk_Dc-t54CZD2OcNf3VtnPrDX3sIQ==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGIBFR3pJPHQrsAn5naaTCEfg8pfJ-W-0lgv03pArPNP1WWyaBRM1VAedUO3YhgI2cXdf8rWhKbU6Bi7fyc7vRO7KeGTszhRb21i7-sezuf02zap6V_sIO5mhZewzCCBICxA1rYyw==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE81_eEhcKnDNBsS7hDN1jqwcW0RYTnl_UCzMQvDYOpL3il78CxZSIKkyreISO_Z29D5lWjr-M2eU37YtE9wVXgTAND9FgxONmfJcAS-tAr1XrG4yf5AKiGP_W1MxB-l9e1vEayyl-oPxUY1PjGw5oUDeQw_14miw==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFcUTEBmb7bwnV9dWiZp57MFasUL4bL8ltTnpU4ZyjWs4m0-UgobkOSVcya-3QMrQdw7OF6JKN2dj0TaGlqdANw1fEjbE0tkR_gmlMKB1pA5MrkBUOcoq63mazeLoEDVyIpNwejUaypz2jAsA==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeJ47lCFw-fCiGkQ_C3LKncGwU3dE196S9QRAVgKmynIHZCgxRjrm6ChNsfiYIoWV2g9oIOIen1Z9-XOArNHXFpWjpR-KKroWM9hVuqz0RrxauAxIHLermmNDkVWTIrUuhWC7htLPqzHwacbnyulFJQKPXRLv2fSjNsX5dyg==",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERbk6Jln4qXwb0QLGKfAmkeK9MXZA6j8CtLKele4UclWy1QK0zQn2tOJGDa3QTuxYfdud8IQuYlw8RlcGi3sHbivo6FMtv4wXtbrtR8EPIv1Icd_Eo7Ml1xYcd3jimGuJzmfvgYpx7kmltt9LaRqbnZmnVtHZxbyca1GoUgah0rWwP2Hor9EPCBir7CW6DRCnI1pmEf7Wq5wBj2pD7LMtELBdTQnSt_cnq2Z5eUIYq",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfsKsP-Tz2hkQsSGirOyiRweYLNeYak1mNLndpu1shGXqwOL9BIetRYgfmRG0AcsLpICNDXO9foIKETNnOcIj_plIXEhBUIxq36Ty-xMt-91FQr4BYYaQdHE0P44e8DKjW3Dp37zkvX_fPDMyuBgz_DE-UxblbDdL7B0KbrzfoA8XIL8CV0QWiSR4hWM2lsF3-WYe5SSBdir3nlhAMO2O1InMNbbO5GOnSu7pwXBMbpSdVgQ1P7R7GAGozRSzIZi1V2nsb7ollwnkLLDn2NdGyCIby",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGle0gvwjN-qiyS93xGa-DBOdodjRTMAUtfTOlJzPPc3SfnHnjRM5sYzUBPtLSRNTOPrCR9iRmSifZgmsOSvd-GtvzKeBiBoYdmcdR6HAIOeF3HVu87es2OPz9J0DjpScLziEN0E6g4E_suYa1g6FuwlEmrBUdsX5E8d0mbFofIgU3jWoVes-zXv_4mJt5j8Za4Azmk1p6FIXhdHr633L1htIoOB68=",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHTBWQLN2S-1q7HBJKDH-obsTEeuZcBbGQw4A-kfe9fB1le-1O7mRNubUJtkAs5LhZx781atlBDj6OXrsEDYPSLR7odg-a_ZiSdmMozqYpBIvuuA2Jdyq03K5Mcu59nNx6Nsz6PL-VyZ60rh9-ju56qKHNacl5M0iOTFyJ0xvn5KMfh",
+      "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbVH1lEPEERTQ_8nYLRIZLwkLtBUqhmvBq24UvSXILJF035kiULikvwHI6mfpaIM1kt25HLwQLdHVcaPK3oV5VyZXJWrJxDCUT8DDDswixO7xm500E-rRLDK0qfo8MKosoDrXMyrhwYSiJORF_FS9S20bwQegK_8_e56_JvEHdOaVmdIyQXxF6SXLZELcjPo9l1cI5GBd9MKrNH2oAAvO1LgXc9YTMzFdOvEtp9vuqkhdGpU-_ZRyVhARhFU8_k_cAOIgktDrKGrs2EyuYYA=="
+    ],
+    "source": "gemini_grounding",
+    "confidence": "low"
+  },
+  "instagram": {
+    "hashtag": "#Centellian24",
+    "post_count_est": 50000,
+    "sources": [
+      "Source [1] shows Centellian24's active presence on Facebook (which links to Instagram) with recent event posts (June, August 2026) using the hashtag, indicating ongoing brand engagement.",
+      "Source [9] from August 29, 2026, highlights Centellian24 sales on Olive Young Global, a major e-commerce platform, suggesting continuous consumer interest and promotion.",
+      "Source [13] from August 18, 2026, lists Centellian24 as a recommended brand on Musinsa, another significant retail platform, reinforcing its market presence.",
+      "Source [15] from August 25, 2026, is a YouTube review of a Centellian24 product, indicating active content creation and discussion around the brand.",
+      "Source [12] from April 2026 reports cumulative sales of Centellian24's Madeca Cream exceeding 91 million units by February 2026, demonstrating the brand's immense popularity and widespread use, which would naturally lead to a high volume of social media posts."
+    ],
+    "source": "gemini_grounding",
+    "confidence": "low"
+  },
+  "ai_summary": "이번 주 센텔리안24의 미국 아마존 지표는 전반적인 개선을 보였습니다. 주요 제품들의 BSR이 크게 개선(순위 상승)되었고 리뷰 수도 꾸준히 늘었습니다. 미국과 일본 양국에서 'Centellian24' 및 'Madeca Cream' 키워드의 Google Trends 검색량도 증가했습니다. 소셜 미디어에서는 추정 틱톡 게시물 수가 감소했음에도 추정 최다 조회수가 3천만 회로 급증했으며, 울타(Ulta)에서는 SKU가 1개 증가했으나 인스타그램 추정 게시물 수는 소폭 감소했습니다.",
+  "sources": [
+    "1",
+    "3",
+    "5",
+    "7",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGumNPY1pUn5t_JJZaDJECh2J1kIMluDuC3GTEfzNgAbGPO0EUcak3QnwlFFgV9dMVWYh_II1zg9NM8ksybKAUD1p7dDYNiGt-Mxh_-HYokGtj-2eQnNQFqIOjSRIy5k-QCD7dt4nQN19sAQzE=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGSmppaPk0ABK4rfDFKLXlY5TkNrJ42AIMjF5BVp5zYZlgL-Y0IfgfZDlcJEXKK54CNhhdlDB01BzYu5eknq2-WhqZ3x7XLwjfWRwtEJtzp1dSxfQZfe12I9F4T9WGOA7y_0c5rBtBzj7u9vrihJfgSTkA=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFvMf9iXqdkIScVZFhYtyXfy7y6G068sSslFx_N0Ap62dabSQ6Qa8gPDavw-YC9w-XrX4W-yjOe32HTaU6-JxdJ2j2ViJWaXPxQEnjsm7bxq-bJhtmncH3DWtIM_0vBoS-1aA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFOqgaZvMaqrz04sdzqaejku7UEDSLNWdFTsjV0r_AuoXZLkNYSiuvn_2S1vBdCdaULN280XXrtksdkkGT8n2y6P7KkjrZy20kT94tVpvWWRZrq0rk_Dc-t54CZD2OcNf3VtnPrDX3sIQ==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGIBFR3pJPHQrsAn5naaTCEfg8pfJ-W-0lgv03pArPNP1WWyaBRM1VAedUO3YhgI2cXdf8rWhKbU6Bi7fyc7vRO7KeGTszhRb21i7-sezuf02zap6V_sIO5mhZewzCCBICxA1rYyw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE81_eEhcKnDNBsS7hDN1jqwcW0RYTnl_UCzMQvDYOpL3il78CxZSIKkyreISO_Z29D5lWjr-M2eU37YtE9wVXgTAND9FgxONmfJcAS-tAr1XrG4yf5AKiGP_W1MxB-l9e1vEayyl-oPxUY1PjGw5oUDeQw_14miw==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFcUTEBmb7bwnV9dWiZp57MFasUL4bL8ltTnpU4ZyjWs4m0-UgobkOSVcya-3QMrQdw7OF6JKN2dj0TaGlqdANw1fEjbE0tkR_gmlMKB1pA5MrkBUOcoq63mazeLoEDVyIpNwejUaypz2jAsA==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGeJ47lCFw-fCiGkQ_C3LKncGwU3dE196S9QRAVgKmynIHZCgxRjrm6ChNsfiYIoWV2g9oIOIen1Z9-XOArNHXFpWjpR-KKroWM9hVuqz0RrxauAxIHLermmNDkVWTIrUuhWC7htLPqzHwacbnyulFJQKPXRLv2fSjNsX5dyg==",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQERbk6Jln4qXwb0QLGKfAmkeK9MXZA6j8CtLKele4UclWy1QK0zQn2tOJGDa3QTuxYfdud8IQuYlw8RlcGi3sHbivo6FMtv4wXtbrtR8EPIv1Icd_Eo7Ml1xYcd3jimGuJzmfvgYpx7kmltt9LaRqbnZmnVtHZxbyca1GoUgah0rWwP2Hor9EPCBir7CW6DRCnI1pmEf7Wq5wBj2pD7LMtELBdTQnSt_cnq2Z5eUIYq",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEfsKsP-Tz2hkQsSGirOyiRweYLNeYak1mNLndpu1shGXqwOL9BIetRYgfmRG0AcsLpICNDXO9foIKETNnOcIj_plIXEhBUIxq36Ty-xMt-91FQr4BYYaQdHE0P44e8DKjW3Dp37zkvX_fPDMyuBgz_DE-UxblbDdL7B0KbrzfoA8XIL8CV0QWiSR4hWM2lsF3-WYe5SSBdir3nlhAMO2O1InMNbbO5GOnSu7pwXBMbpSdVgQ1P7R7GAGozRSzIZi1V2nsb7ollwnkLLDn2NdGyCIby",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGle0gvwjN-qiyS93xGa-DBOdodjRTMAUtfTOlJzPPc3SfnHnjRM5sYzUBPtLSRNTOPrCR9iRmSifZgmsOSvd-GtvzKeBiBoYdmcdR6HAIOeF3HVu87es2OPz9J0DjpScLziEN0E6g4E_suYa1g6FuwlEmrBUdsX5E8d0mbFofIgU3jWoVes-zXv_4mJt5j8Za4Azmk1p6FIXhdHr633L1htIoOB68=",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHTBWQLN2S-1q7HBJKDH-obsTEeuZcBbGQw4A-kfe9fB1le-1O7mRNubUJtkAs5LhZx781atlBDj6OXrsEDYPSLR7odg-a_ZiSdmMozqYpBIvuuA2Jdyq03K5Mcu59nNx6Nsz6PL-VyZ60rh9-ju56qKHNacl5M0iOTFyJ0xvn5KMfh",
+    "https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHbVH1lEPEERTQ_8nYLRIZLwkLtBUqhmvBq24UvSXILJF035kiULikvwHI6mfpaIM1kt25HLwQLdHVcaPK3oV5VyZXJWrJxDCUT8DDDswixO7xm500E-rRLDK0qfo8MKosoDrXMyrhwYSiJORF_FS9S20bwQegK_8_e56_JvEHdOaVmdIyQXxF6SXLZELcjPo9l1cI5GBd9MKrNH2oAAvO1LgXc9YTMzFdOvEtp9vuqkhdGpU-_ZRyVhARhFU8_k_cAOIgktDrKGrs2EyuYYA==",
+    "Source [1] shows Centellian24's active presence on Facebook (which links to Instagram) with recent event posts (June, August 2026) using the hashtag, indicating ongoing brand engagement.",
+    "Source [9] from August 29, 2026, highlights Centellian24 sales on Olive Young Global, a major e-commerce platform, suggesting continuous consumer interest and promotion.",
+    "Source [13] from August 18, 2026, lists Centellian24 as a recommended brand on Musinsa, another significant retail platform, reinforcing its market presence.",
+    "Source [15] from August 25, 2026, is a YouTube review of a Centellian24 product, indicating active content creation and discussion around the brand.",
+    "Source [12] from April 2026 reports cumulative sales of Centellian24's Madeca Cream exceeding 91 million units by February 2026, demonstrating the brand's immense popularity and widespread use, which would naturally lead to a high volume of social media posts."
+  ]
+}
